@@ -1,0 +1,80 @@
+# .htaccess - Apache Configuration for Performance & Security
+# Coloca este archivo en la raíz del servidor
+
+# ============================================================================
+# PERFORMANCE HEADERS
+# ============================================================================
+
+# Habilitar compresión GZIP
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilter DEFLATE svg
+</IfModule>
+
+# Cache estático (1 año)
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Cache HTML (1 semana)
+<FilesMatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# ============================================================================
+# SECURITY HEADERS
+# ============================================================================
+
+# Prevenir clickjacking
+Header set X-Frame-Options "SAMEORIGIN"
+
+# Prevenir MIME sniffing
+Header set X-Content-Type-Options "nosniff"
+
+# XSS Protection
+Header set X-XSS-Protection "1; mode=block"
+
+# Referrer Policy
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Permissions Policy
+Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+# ============================================================================
+# SEO & REDIRECTS
+# ============================================================================
+
+# Redirigir HTTP a HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Redirigir www a no-www (o viceversa)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Agregar trailing slash a directorios
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+</IfModule>
+
+# ============================================================================
+# ACCESSIBILITY
+# ============================================================================
+
+# CORS para fuentes (Google Fonts)
+<FilesMatch "\.(woff|woff2|ttf|eot|svg)$">
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# ============================================================================
+# DISABLE DIRECTORY LISTING
+# ============================================================================
+
+Options -Indexes

@@ -1,0 +1,63 @@
+{
+  "name": "Jair Cantor | Consultor BI & Análisis Financiero",
+  "short_name": "Jair Cantor",
+  "description": "Consultoría en Power BI, Python, SQL, Excel, modelos financieros, análisis P&L, automatización de reportes y dashboards ejecutivos.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#102b57",
+  "background_color": "#f7f9fc",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Ver Servicios",
+      "short_name": "Servicios",
+      "description": "Ver todos los servicios disponibles",
+      "url": "/?utm_source=pwa#servicios",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Contactar",
+      "short_name": "Contacto",
+      "description": "Contactar por Workana",
+      "url": "/?utm_source=pwa#contacto",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

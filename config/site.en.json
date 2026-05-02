@@ -1,0 +1,139 @@
+{
+  "services": {
+    "eyebrow": "Services",
+    "title": "Modular financial solutions for every stage of the business.",
+    "description": "You can start with a focused dashboard or build a complete BI system with automation, a financial model, and an executive presentation.",
+    "items": [
+      {
+        "title": "Power BI dashboards",
+        "description": "Executive KPIs, drill-down by product, branch, or period, clear visuals, and automated refresh."
+      },
+      {
+        "title": "P&L and profitability analysis",
+        "description": "Revenue, COGS, OPEX, EBITDA, gross margin, and net income analysis with actionable recommendations."
+      },
+      {
+        "title": "Financial models",
+        "description": "Three-year forecasts, pessimistic/base/optimistic scenarios, cash flow, and investor-ready structure."
+      },
+      {
+        "title": "Python + SQL automation",
+        "description": "Scripts and ETL pipelines that consolidate data from ERPs, databases, or Excel/CSV files."
+      },
+      {
+        "title": "Executive pitch decks",
+        "description": "Presentations for funding rounds, leadership committees, or financial communication with a clear narrative."
+      },
+      {
+        "title": "Automated reports",
+        "description": "PDFs, presentations, or editable files generated with one click or on a schedule."
+      }
+    ]
+  },
+  "packages": {
+    "eyebrow": "Services & packages",
+    "title": "Three packages to turn data into decisions.",
+    "description": "All include a clear scope, revisions, and delivery within the agreed timeline.",
+    "items": [
+      {
+        "name": "Basic",
+        "price": "$200 USD",
+        "delivery": "Delivery: 3 days",
+        "style": "",
+        "badge": "",
+        "features": [
+          "Power BI dashboard up to 6 KPIs",
+          "1 Excel/CSV data source",
+          "Professional executive design",
+          "1 revision included"
+        ]
+      },
+      {
+        "name": "Professional",
+        "price": "$450 USD",
+        "delivery": "Delivery: 5 days",
+        "style": "featured",
+        "badge": "Most popular",
+        "features": [
+          "Complete dashboard with unlimited KPIs",
+          "Up to 3 data sources",
+          "P&L or profitability analysis",
+          "10-slide executive presentation",
+          "2 revisions + delivery session",
+          "Editable file delivered"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$950 USD",
+        "delivery": "Delivery: 10 days",
+        "style": "premium",
+        "badge": "",
+        "features": [
+          "Complete financial BI system",
+          "Python + SQL automation",
+          "Financial model + forecasts",
+          "15-slide investor pitch deck",
+          "Unlimited revisions",
+          "30-day post-delivery support"
+        ]
+      }
+    ]
+  },
+  "additionalServices": {
+    "title": "Additional services",
+    "description": "Add focused deliverables to any package when the project needs more depth, automation, or executive material.",
+    "label": "Optional add-ons",
+    "items": [
+      {
+        "name": "Investor pitch deck",
+        "price": "$150 - $300",
+        "description": "A clear investment story with numbers, market context, and decision-ready slides.",
+        "details": [
+          "Narrative structure for investors",
+          "Financial and traction slides",
+          "Editable presentation file"
+        ]
+      },
+      {
+        "name": "Three-year forecast model",
+        "price": "$200 - $400",
+        "description": "Scenario-based projections to plan revenue, costs, margins, and cash flow.",
+        "details": [
+          "Base, optimistic, and conservative cases",
+          "Revenue and expense assumptions",
+          "Editable model with clear inputs"
+        ]
+      },
+      {
+        "name": "Report automation",
+        "price": "$300 - $600",
+        "description": "Automated report generation from recurring data sources and operational files.",
+        "details": [
+          "Python or SQL workflow",
+          "Excel, PDF, or dashboard output",
+          "Repeatable process documentation"
+        ]
+      },
+      {
+        "name": "Profitability analysis",
+        "price": "$150 - $350",
+        "description": "Margin and profitability review by product, channel, branch, or customer group.",
+        "details": [
+          "Revenue, cost, and margin breakdown",
+          "Profitability drivers and outliers",
+          "Executive recommendations"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "availability": "Available on Workana &middot; Colombia",
+    "title": "Ready to start?",
+    "description": "Message me on Workana and I will reply in under 24 hours with a tailored proposal.",
+    "buttonLabel": "Contact on Workana",
+    "url": "https://www.workana.com/",
+    "footerAvailability": "Available on",
+    "footerLocation": "Colombia"
+  }
+}

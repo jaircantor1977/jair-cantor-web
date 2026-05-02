@@ -1,0 +1,27 @@
+# Local/editor
+.vscode/
+.codex_extract/
+
+# Logs and temporary server output
+*.log
+node-server-*.txt
+dev-server.*.log
+
+# Source documents used to design the site
+DOSC_IA/
+
+# Dependencies/build output, in case the site later becomes a Node/Next.js app
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS files
+Thumbs.db
+.DS_Store

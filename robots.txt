@@ -1,0 +1,21 @@
+# Jair Cantor - Consultor BI & Análisis Financiero
+# robots.txt para optimización SEO
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemaps
+Sitemap: https://jaircantor.com/sitemap.xml
+
+# Crawl delay (segundos - opcional)
+Crawl-delay: 0
+
+# Especificar el User-Agent predeterminado
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

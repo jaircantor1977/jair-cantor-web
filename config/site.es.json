@@ -1,0 +1,139 @@
+{
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Soluciones financieras modulares para cada etapa del negocio.",
+    "description": "Puedes empezar con un dashboard puntual o construir un sistema BI completo con automatizacion, modelo financiero y presentacion ejecutiva.",
+    "items": [
+      {
+        "title": "Dashboards Power BI",
+        "description": "KPI ejecutivos, drill-down por producto, sucursal o periodo, visuales claros y actualizacion automatica."
+      },
+      {
+        "title": "Analisis P&L y rentabilidad",
+        "description": "Lectura de ingresos, COGS, OPEX, EBITDA, margen bruto y utilidad neta con recomendaciones accionables."
+      },
+      {
+        "title": "Modelos financieros",
+        "description": "Proyecciones a 3 anos, escenarios pesimista/base/optimista, flujo de caja y estructura para inversionistas."
+      },
+      {
+        "title": "Automatizacion Python + SQL",
+        "description": "Scripts y pipelines ETL que consolidan datos desde ERP, bases de datos o archivos Excel/CSV."
+      },
+      {
+        "title": "Pitch decks ejecutivos",
+        "description": "Presentaciones para rondas de inversion, comites directivos o comunicacion financiera con narrativa clara."
+      },
+      {
+        "title": "Reportes automaticos",
+        "description": "Generacion de PDFs, presentaciones o archivos editables con un clic o en horario programado."
+      }
+    ]
+  },
+  "packages": {
+    "eyebrow": "Servicios & paquetes",
+    "title": "Tres paquetes para convertir datos en decisiones.",
+    "description": "Todos incluyen alcance claro, revisiones y entrega en el plazo acordado.",
+    "items": [
+      {
+        "name": "Basico",
+        "price": "$200 USD",
+        "delivery": "Entrega: 3 dias",
+        "style": "",
+        "badge": "",
+        "features": [
+          "Dashboard Power BI hasta 6 KPIs",
+          "1 fuente de datos Excel/CSV",
+          "Diseno ejecutivo profesional",
+          "1 revision incluida"
+        ]
+      },
+      {
+        "name": "Profesional",
+        "price": "$450 USD",
+        "delivery": "Entrega: 5 dias",
+        "style": "featured",
+        "badge": "Mas popular",
+        "features": [
+          "Dashboard completo con KPIs ilimitados",
+          "Hasta 3 fuentes de datos",
+          "Analisis P&L o rentabilidad",
+          "Presentacion ejecutiva 10 slides",
+          "2 revisiones + sesion de entrega",
+          "Archivo editable entregado"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$950 USD",
+        "delivery": "Entrega: 10 dias",
+        "style": "premium",
+        "badge": "",
+        "features": [
+          "Sistema BI financiero completo",
+          "Python + SQL automatizacion",
+          "Modelo financiero + proyecciones",
+          "Pitch deck inversionistas 15 slides",
+          "Revisiones ilimitadas",
+          "Soporte 30 dias post-entrega"
+        ]
+      }
+    ]
+  },
+  "additionalServices": {
+    "title": "Servicios adicionales",
+    "description": "Agrega entregables puntuales a cualquier paquete cuando el proyecto necesita mas profundidad, automatizacion o material ejecutivo.",
+    "label": "Complementos opcionales",
+    "items": [
+      {
+        "name": "Pitch Deck para Inversores",
+        "price": "$150 - $300",
+        "description": "Una narrativa clara para inversionistas con cifras, contexto de mercado y slides listos para decidir.",
+        "details": [
+          "Estructura narrativa para inversionistas",
+          "Slides financieros y de traccion",
+          "Archivo editable de presentacion"
+        ]
+      },
+      {
+        "name": "Modelo de Proyecciones 3 anos",
+        "price": "$200 - $400",
+        "description": "Proyecciones por escenarios para planear ingresos, costos, margenes y flujo de caja.",
+        "details": [
+          "Escenarios base, optimista y conservador",
+          "Supuestos de ingresos y gastos",
+          "Modelo editable con inputs claros"
+        ]
+      },
+      {
+        "name": "Automatizacion de Reportes",
+        "price": "$300 - $600",
+        "description": "Generacion automatica de reportes desde fuentes recurrentes y archivos operativos.",
+        "details": [
+          "Flujo en Python o SQL",
+          "Salida en Excel, PDF o dashboard",
+          "Documentacion del proceso repetible"
+        ]
+      },
+      {
+        "name": "Analisis de Rentabilidad",
+        "price": "$150 - $350",
+        "description": "Revision de margenes y rentabilidad por producto, canal, sucursal o grupo de clientes.",
+        "details": [
+          "Desglose de ingresos, costos y margen",
+          "Drivers de rentabilidad y atipicos",
+          "Recomendaciones ejecutivas"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "availability": "Disponible en Workana &middot; Colombia",
+    "title": "Listo para empezar?",
+    "description": "Escribeme en Workana y respondo en menos de 24 horas con una propuesta personalizada.",
+    "buttonLabel": "Contactar en Workana",
+    "url": "https://www.workana.com/",
+    "footerAvailability": "Disponible en",
+    "footerLocation": "Colombia"
+  }
+}
