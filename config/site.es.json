@@ -133,6 +133,10 @@
     "description": "Escribeme en Workana y respondo en menos de 24 horas con una propuesta personalizada.",
     "buttonLabel": "Contactar en Workana",
     "url": "https://www.workana.com/",
+    "emailLabel": "Correo",
+    "email": "jair.cantor.arciniegas@gmail.com",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/search/results/people/?keywords=Jair%20Ernesto%20Cantor%20Arciniegas",
     "footerAvailability": "Disponible en",
     "footerLocation": "Colombia"
   }

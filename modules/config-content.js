@@ -172,9 +172,24 @@ const renderContact = (contact) => {
     cta.href = contact.url;
   }
 
+  const email = document.querySelector(".contact-email");
+  if (email && contact.email) {
+    email.textContent = contact.emailLabel ? `${contact.emailLabel}: ${contact.email}` : contact.email;
+    email.href = `mailto:${contact.email}`;
+  }
+
+  const linkedin = document.querySelector(".contact-linkedin");
+  if (linkedin && contact.linkedinUrl) {
+    linkedin.textContent = contact.linkedinLabel || "LinkedIn";
+    linkedin.href = contact.linkedinUrl;
+  }
+
   const footerWorkana = document.querySelector("footer .footer-content p:nth-child(2)");
   if (footerWorkana) {
-    footerWorkana.innerHTML = `${contact.footerAvailability} <a href="${contact.url}" target="_blank" rel="noopener noreferrer">Workana</a> - ${contact.footerLocation}`;
+    const emailLink = contact.email
+      ? ` - <a href="mailto:${contact.email}">${contact.email}</a>`
+      : "";
+    footerWorkana.innerHTML = `${contact.footerAvailability} <a href="${contact.url}" target="_blank" rel="noopener noreferrer">Workana</a>${emailLink} - ${contact.footerLocation}`;
   }
 };
 

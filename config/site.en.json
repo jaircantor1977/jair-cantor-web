@@ -133,6 +133,10 @@
     "description": "Message me on Workana and I will reply in under 24 hours with a tailored proposal.",
     "buttonLabel": "Contact on Workana",
     "url": "https://www.workana.com/",
+    "emailLabel": "Email",
+    "email": "jair.cantor.arciniegas@gmail.com",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/search/results/people/?keywords=Jair%20Ernesto%20Cantor%20Arciniegas",
     "footerAvailability": "Available on",
     "footerLocation": "Colombia"
   }
