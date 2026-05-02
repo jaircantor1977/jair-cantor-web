@@ -166,22 +166,31 @@ const renderContact = (contact) => {
   setText(".final-cta h2", contact.title);
   setText(".final-cta p:not(.eyebrow)", contact.description);
 
-  const cta = document.querySelector(".final-cta .button");
-  if (cta) {
-    cta.textContent = contact.buttonLabel;
-    cta.href = contact.url;
-  }
-
   const email = document.querySelector(".contact-email");
   if (email && contact.email) {
-    email.textContent = contact.emailLabel ? `${contact.emailLabel}: ${contact.email}` : contact.email;
+    const title = email.querySelector("strong");
+    const detail = email.querySelector("small");
+    if (title) title.textContent = contact.emailLabel || "Email";
+    if (detail) detail.textContent = contact.email;
     email.href = `mailto:${contact.email}`;
   }
 
   const linkedin = document.querySelector(".contact-linkedin");
   if (linkedin && contact.linkedinUrl) {
-    linkedin.textContent = contact.linkedinLabel || "LinkedIn";
+    const title = linkedin.querySelector("strong");
+    const detail = linkedin.querySelector("small");
+    if (title) title.textContent = contact.linkedinLabel || "LinkedIn";
+    if (detail) detail.textContent = contact.linkedinDescription || contact.linkedinUrl;
     linkedin.href = contact.linkedinUrl;
+  }
+
+  const workana = document.querySelector(".contact-workana");
+  if (workana && contact.url) {
+    const title = workana.querySelector("strong");
+    const detail = workana.querySelector("small");
+    if (title) title.textContent = contact.workanaLabel || contact.buttonLabel || "Workana";
+    if (detail) detail.textContent = contact.workanaDescription || "Start a project from the platform";
+    workana.href = contact.url;
   }
 
   const footerWorkana = document.querySelector("footer .footer-content p:nth-child(2)");
