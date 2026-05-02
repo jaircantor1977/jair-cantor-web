@@ -429,31 +429,36 @@ h3 {
   min-height: 560px;
   perspective: 1000px;
   contain: layout paint;
+  isolation: isolate;
 }
 
 .data-flow {
   position: absolute;
-  inset: 8px 0 0;
-  z-index: 0;
+  top: 14px;
+  right: 34px;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 8px;
   pointer-events: none;
 }
 
 .source-node {
-  position: absolute;
+  position: relative;
   display: inline-grid;
   place-items: center;
-  min-width: 118px;
-  min-height: 42px;
-  padding: 0 16px;
+  min-width: auto;
+  min-height: 30px;
+  padding: 0 11px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: var(--radius-full);
   color: white;
-  background: rgba(6, 20, 37, 0.52);
-  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.22), inset 0 0 18px rgba(0, 194, 168, 0.2);
-  backdrop-filter: blur(16px);
-  font-size: 0.74rem;
+  background: rgba(6, 20, 37, 0.74);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2), inset 0 0 14px rgba(0, 194, 168, 0.16);
+  backdrop-filter: blur(12px);
+  font-size: 0.58rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   animation: data-node-pulse 3.8s ease-in-out infinite;
 }
@@ -469,26 +474,15 @@ h3 {
   animation: node-ring 3.8s ease-in-out infinite;
 }
 
-.node-sales {
-  top: 96px;
-  left: 8px;
-}
-
 .node-finance {
-  top: 224px;
-  left: 28px;
   animation-delay: 0.4s;
 }
 
 .node-ops {
-  right: 38px;
-  bottom: 118px;
   animation-delay: 0.9s;
 }
 
 .node-marketing {
-  left: 96px;
-  bottom: 18px;
   animation-delay: 1.3s;
 }
 
@@ -496,8 +490,9 @@ h3 {
   position: absolute;
   height: 2px;
   border-radius: var(--radius-full);
-  background: linear-gradient(90deg, rgba(0, 194, 168, 0), rgba(0, 194, 168, 0.82), rgba(255, 255, 255, 0.18));
-  box-shadow: 0 0 22px rgba(0, 194, 168, 0.28);
+  background: linear-gradient(90deg, rgba(0, 194, 168, 0), rgba(0, 194, 168, 0.54), rgba(255, 255, 255, 0.12));
+  box-shadow: 0 0 18px rgba(0, 194, 168, 0.2);
+  opacity: 0.64;
   overflow: hidden;
   transform-origin: left center;
 }
@@ -516,8 +511,8 @@ h3 {
   position: absolute;
   top: 50%;
   left: -12px;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #9ef4df;
   box-shadow: 0 0 16px #00c2a8, 0 0 34px rgba(255, 255, 255, 0.46);
@@ -530,31 +525,31 @@ h3 {
 }
 
 .line-1 {
-  top: 138px;
-  left: 120px;
-  width: 390px;
-  transform: rotate(13deg);
+  top: 44px;
+  right: 318px;
+  width: 118px;
+  transform: rotate(18deg);
 }
 
 .line-2 {
-  top: 264px;
-  left: 138px;
-  width: 360px;
-  transform: rotate(-10deg);
+  top: 44px;
+  right: 206px;
+  width: 112px;
+  transform: rotate(13deg);
 }
 
 .line-3 {
-  right: 72px;
-  bottom: 194px;
-  width: 260px;
-  transform: rotate(-158deg);
+  top: 44px;
+  right: 112px;
+  width: 92px;
+  transform: rotate(10deg);
 }
 
 .line-4 {
-  left: 210px;
-  bottom: 88px;
-  width: 330px;
-  transform: rotate(-28deg);
+  top: 44px;
+  right: 24px;
+  width: 92px;
+  transform: rotate(8deg);
 }
 
 .dashboard-shell,
@@ -567,10 +562,10 @@ h3 {
 
 .dashboard-shell {
   position: absolute;
-  top: 58px;
-  right: 0;
+  top: 78px;
+  right: 22px;
   z-index: 2;
-  width: min(520px, 100%);
+  width: min(500px, calc(100% - 48px));
   padding: 16px;
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.9);
@@ -727,11 +722,11 @@ h3 {
 
 .floating-card {
   position: absolute;
-  top: 0;
-  left: 18px;
+  top: 10px;
+  left: 32px;
   z-index: var(--z-dropdown);
-  width: 240px;
-  padding: 20px;
+  width: 218px;
+  padding: 16px;
   border-radius: var(--radius-md);
   background: rgba(9, 25, 45, 0.82);
   backdrop-filter: blur(18px);
@@ -743,7 +738,7 @@ h3 {
   display: block;
   margin: 8px 0;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.14rem;
 }
 
 .floating-card small {
@@ -752,14 +747,14 @@ h3 {
 
 .code-panel {
   position: absolute;
-  right: 70px;
-  bottom: 34px;
+  right: 56px;
+  bottom: 28px;
   z-index: 3;
-  width: 330px;
-  padding: 18px;
+  width: min(420px, calc(100% - 110px));
+  padding: 14px 18px;
   border-radius: var(--radius-md);
-  background: #061425;
-  transform: rotateZ(-4deg);
+  background: rgba(6, 20, 37, 0.92);
+  transform: rotateZ(-1.5deg);
   contain: layout paint;
   animation: code-panel-rise 6s ease-in-out infinite;
 }
@@ -870,11 +865,11 @@ h3 {
 @keyframes code-panel-rise {
   0%,
   100% {
-    transform: rotateZ(-4deg) translateY(0);
+    transform: rotateZ(-1.5deg) translateY(0);
   }
 
   50% {
-    transform: rotateZ(-3deg) translateY(-10px);
+    transform: rotateZ(-1deg) translateY(-8px);
   }
 }
 
@@ -1994,51 +1989,35 @@ footer a:focus-visible {
   }
 
   .source-node {
-    min-width: 104px;
-    min-height: 38px;
-    font-size: 0.68rem;
-  }
-
-  .node-sales {
-    top: 70px;
-  }
-
-  .node-finance {
-    top: 190px;
-    left: 8px;
-  }
-
-  .node-ops {
-    right: 8px;
-    bottom: 120px;
-  }
-
-  .node-marketing {
-    left: 44px;
+    min-height: 30px;
+    font-size: 0.58rem;
   }
 
   .line-1 {
-    top: 112px;
-    left: 106px;
-    width: 320px;
+    top: 44px;
+    right: 300px;
+    width: 104px;
   }
 
   .line-2 {
-    top: 228px;
-    left: 110px;
-    width: 300px;
+    top: 44px;
+    right: 198px;
+    width: 98px;
   }
 
   .line-3 {
-    right: 52px;
-    bottom: 182px;
-    width: 220px;
+    top: 44px;
+    right: 106px;
+    bottom: auto;
+    width: 86px;
   }
 
   .line-4 {
-    left: 150px;
-    bottom: 86px;
-    width: 300px;
+    top: 44px;
+    right: 24px;
+    bottom: auto;
+    left: auto;
+    width: 82px;
   }
 
   .dashboard-shell {
@@ -2173,66 +2152,21 @@ footer a:focus-visible {
   }
 
   .data-flow {
-    inset: 8px 0 auto;
-    height: 520px;
+    top: 18px;
+    right: 12px;
+    grid-template-columns: repeat(2, auto);
+    height: auto;
   }
 
   .source-node {
     min-width: auto;
-    min-height: 34px;
-    padding: 0 12px;
-    font-size: 0.62rem;
-  }
-
-  .node-sales {
-    top: 42px;
-    left: 0;
-  }
-
-  .node-finance {
-    top: 158px;
-    left: 4px;
-  }
-
-  .node-ops {
-    right: 0;
-    bottom: 118px;
-  }
-
-  .node-marketing {
-    left: 10px;
-    bottom: 48px;
+    min-height: 28px;
+    padding: 0 10px;
+    font-size: 0.54rem;
   }
 
   .flow-line {
-    opacity: 0.72;
-  }
-
-  .line-1 {
-    top: 80px;
-    left: 76px;
-    width: 210px;
-    transform: rotate(18deg);
-  }
-
-  .line-2 {
-    top: 194px;
-    left: 92px;
-    width: 190px;
-    transform: rotate(-8deg);
-  }
-
-  .line-3 {
-    right: 44px;
-    bottom: 174px;
-    width: 150px;
-  }
-
-  .line-4 {
-    left: 78px;
-    bottom: 96px;
-    width: 205px;
-    transform: rotate(-34deg);
+    display: none;
   }
 
   .floating-card {
@@ -2243,9 +2177,9 @@ footer a:focus-visible {
 
   .code-panel {
     animation: none;
-    right: 0;
-    bottom: 0;
-    width: 92%;
+    right: 10px;
+    bottom: 28px;
+    width: calc(100% - 20px);
   }
 
   .section {
