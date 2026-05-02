@@ -8,7 +8,7 @@ Disallow: /private/
 Disallow: /temp/
 
 # Sitemaps
-Sitemap: https://jaircantor.com/sitemap.xml
+Sitemap: https://jaircantorconsulting.org/sitemap.xml
 
 # Crawl delay (segundos - opcional)
 Crawl-delay: 0
