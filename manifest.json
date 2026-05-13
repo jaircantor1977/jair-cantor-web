@@ -11,25 +11,25 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/favicon.svg?v=4",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "/favicon-32x32.png?v=4",
       "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-16x16.png",
+      "src": "/favicon-16x16.png?v=4",
       "sizes": "16x16",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/apple-touch-icon.png?v=4",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
@@ -52,7 +52,7 @@
       "url": "/?utm_source=pwa#servicios",
       "icons": [
         {
-          "src": "/favicon.svg",
+          "src": "/favicon.svg?v=4",
           "sizes": "any",
           "type": "image/svg+xml"
         }
@@ -65,7 +65,7 @@
       "url": "/?utm_source=pwa#contacto",
       "icons": [
         {
-          "src": "/favicon.svg",
+          "src": "/favicon.svg?v=4",
           "sizes": "any",
           "type": "image/svg+xml"
         }
