@@ -74,6 +74,7 @@
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#servicios">Services</a>
+        <a href="#dashboards">Dashboards</a>
         <a href="#casos">Case studies</a>
         <a href="#paquetes">Packages</a>
         <a href="#proceso">Process</a>
@@ -175,6 +176,69 @@
         <span>PowerPoint</span>
       </section>
 
+      <section class="section interactive-section" id="dashboards">
+        <div class="section-intro">
+          <p class="eyebrow">Interactive dashboards</p>
+          <h2>Visuals that answer business questions.</h2>
+          <p>
+            Deliverables can include filters by period, channel, region, category, or owner, with metrics that update instantly so you can explore scenarios without requesting new reports.
+          </p>
+        </div>
+        <div class="interactive-dashboard">
+          <div class="dashboard-controls" aria-label="Select dashboard type">
+            <button class="data-tab is-active" type="button" data-dashboard="finance">Finance</button>
+            <button class="data-tab" type="button" data-dashboard="sales">Sales & CRM</button>
+            <button class="data-tab" type="button" data-dashboard="marketing">Marketing</button>
+            <button class="data-tab" type="button" data-dashboard="ops">Operations</button>
+          </div>
+          <div class="live-board">
+            <div class="live-board-header">
+              <div>
+                <p class="case-kicker" data-live-kicker>Profitability and cash flow</p>
+                <h3 data-live-title>Executive financial dashboard</h3>
+              </div>
+              <label>
+                Period
+                <input type="range" min="0" max="5" value="4" data-period-range>
+              </label>
+            </div>
+            <div class="live-kpis">
+              <article>
+                <span data-kpi-one-label>Revenue</span>
+                <strong data-kpi-one>$20.8M</strong>
+              </article>
+              <article>
+                <span data-kpi-two-label>EBITDA</span>
+                <strong data-kpi-two>$4.2M</strong>
+              </article>
+              <article>
+                <span data-kpi-three-label>Net margin</span>
+                <strong data-kpi-three>14%</strong>
+              </article>
+            </div>
+            <div class="live-chart-wrap">
+              <div class="live-bars" data-live-bars aria-label="Interactive bar chart">
+                <div class="live-bar"><i style="--bar-height: 116px"></i><b>Jan</b><span>58%</span></div>
+                <div class="live-bar"><i style="--bar-height: 92px"></i><b>Feb</b><span>46%</span></div>
+                <div class="live-bar"><i style="--bar-height: 128px"></i><b>Mar</b><span>64%</span></div>
+                <div class="live-bar"><i style="--bar-height: 144px"></i><b>Apr</b><span>72%</span></div>
+                <div class="live-bar"><i style="--bar-height: 176px"></i><b>May</b><span>88%</span></div>
+                <div class="live-bar"><i style="--bar-height: 65px"></i><b>Jun</b><span>33%</span></div>
+              </div>
+              <div class="live-side">
+                <div class="donut" data-donut style="--value: 68%">
+                  <span data-donut-value>68%</span>
+                </div>
+                <p data-donut-label>Goal progress</p>
+              </div>
+            </div>
+            <div class="insight-strip" data-live-insight>
+              Daily financial report automation with variances by product and period.
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section light" id="servicios">
         <div class="section-intro">
           <p class="eyebrow">Services</p>
@@ -182,6 +246,23 @@
           <p>
             You can start with a focused dashboard or build a complete BI system with automation, a financial model, and an executive presentation.
           </p>
+        </div>
+        <div class="data-groups">
+          <article>
+            <span>01</span>
+            <h3>Sales & CRM</h3>
+            <p>Sales funnel, conversion, average ticket, forecast, opportunities by rep, and customer follow-up.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Marketing & growth</h3>
+            <p>Campaign ROI, CAC, leads, conversion rate, channels, cohorts, and attribution to optimize spend.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Operations & logistics</h3>
+            <p>Inventory, fulfillment, delivery times, productivity, incidents, capacity, and operational alerts.</p>
+          </article>
         </div>
         <div class="service-grid">
           <article class="service-card">
@@ -241,7 +322,7 @@
           </article>
 
           <article class="case-card">
-            <img src="assets/case-retail-dashboard.jpg" alt="Executive P&L dashboard para retail">
+            <img src="assets/case-retail-dashboard.jpg" alt="Executive P&L dashboard for retail">
             <div>
               <p class="case-kicker">Nova Retail S.A.S.</p>
               <h3>Executive P&L dashboard</h3>
@@ -262,7 +343,7 @@
         <div class="pricing-grid">
           <article class="price-card">
             <p>Basic</p>
-            <h3>$90 USD</h3>
+            <h3>$200 USD</h3>
             <span>Delivery: 3 days</span>
             <ul>
               <li>Power BI dashboard up to 6 KPIs</li>
@@ -274,7 +355,7 @@
           <article class="price-card featured">
             <div class="badge">Most popular</div>
             <p>Professional</p>
-            <h3>$250 USD</h3>
+            <h3>$450 USD</h3>
             <span>Delivery: 5 days</span>
             <ul>
               <li>Complete dashboard with unlimited KPIs</li>
@@ -287,7 +368,7 @@
           </article>
           <article class="price-card premium">
             <p>Premium</p>
-            <h3>$550 USD</h3>
+            <h3>$950 USD</h3>
             <span>Delivery: 10 days</span>
             <ul>
               <li>Complete financial BI system</li>
@@ -393,7 +474,7 @@
 
     <footer role="contentinfo">
       <div class="footer-content">
-        <p>&copy; 2024 Jair Cantor. BI Consultant &amp; Financial Analysis.</p>
+        <p>&copy; 2026 Jair Cantor. BI Consultant &amp; Financial Analysis.</p>
         <p>Contact via <a href="https://www.workana.com/" target="_blank" rel="noopener noreferrer">Workana</a> - <a href="mailto:jair.cantor.arciniegas@gmail.com">jair.cantor.arciniegas@gmail.com</a> - Colombia</p>
       </div>
       <a href="#inicio" class="footer-link" aria-label="Back to top">↑ Back to top</a>
@@ -404,6 +485,7 @@
     <script src="modules/header.js" type="module" defer></script>
     <script src="modules/navigation.js" type="module" defer></script>
     <script src="modules/animations.js" type="module" defer></script>
+    <script src="modules/dashboard-demo.js" defer></script>
     <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
