@@ -12,5 +12,5 @@ const isAmount = /^\$\s?\d/.test(plan.price);
   <ul>
     {plan.features.map((feature) => <li>{feature}</li>)}
   </ul>
-  {plan.cta && <a class="button primary price-cta" href="#contacto">{plan.cta}</a>}
+  {plan.cta && <a class="button primary price-cta" href="#contacto" data-track={`pricing_${plan.name}`}>{plan.cta}</a>}
 </article>

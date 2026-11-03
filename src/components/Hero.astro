@@ -9,8 +9,11 @@ const { hero } = t;
       <p class="eyebrow">{hero.eyebrow}</p>
       <h1>{hero.title}</h1>
       <p class="hero-lede">{hero.lede}</p>
+      <ul class="hero-lines" aria-label={hero.linksLabel}>
+        {hero.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+      </ul>
       <div class="hero-actions">
-        <a class="button primary" href="#paquetes">{hero.primaryCta}</a>
+        <a class="button primary" href="#paquetes" data-track="hero_pricing">{hero.primaryCta}</a>
         <a class="button secondary" href="#casos">{hero.secondaryCta}</a>
       </div>
       <dl class="hero-stats" aria-label={hero.statsLabel}>

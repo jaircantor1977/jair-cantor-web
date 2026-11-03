@@ -7,11 +7,14 @@ const { header } = t;
     <span class="brand-mark">JC</span>
     <span>Jair Cantor</span>
   </a>
-  <nav class="nav-links" aria-label={header.navLabel}>
+  <nav class="nav-links" id="site-nav" aria-label={header.navLabel} data-nav>
     {header.nav.map((link) => <a href={link.href}>{link.label}</a>)}
   </nav>
   <div class="header-actions">
     <a class="language-toggle" href={header.languageSwitch.href} hreflang={header.languageSwitch.lang} aria-label={header.languageSwitch.ariaLabel}>{header.languageSwitch.label}</a>
-    <a class="header-cta" href="#contacto">{header.cta}</a>
+    <a class="header-cta" href="#contacto" data-track="header_cta">{header.cta}</a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label={header.menuLabel} data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>

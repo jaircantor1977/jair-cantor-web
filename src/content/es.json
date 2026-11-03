@@ -1,11 +1,11 @@
 {
   "lang": "es",
   "meta": {
-    "title": "Jair Cantor | Consultor BI & Análisis Financiero",
-    "description": "Consultoría en Power BI, Python, SQL, Excel, modelos financieros, análisis P&L, automatización de reportes y dashboards ejecutivos. 18+ años en datos y 6+ como consultor BI.",
-    "keywords": "Power BI, Python, SQL, Excel, análisis financiero, dashboards, ETL, consultoría BI",
-    "ogDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones Python + SQL para equipos que necesitan claridad ejecutiva.",
-    "twitterDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones con Python + SQL.",
+    "title": "Jair Cantor | Consultoría en BI, IA y SQL Server",
+    "description": "Dashboards Power BI y análisis financiero, agentes de IA auditables y diagnóstico de SQL Server con BLACKBOX Wolf. 18+ años en datos y 6+ como consultor BI.",
+    "keywords": "Power BI, inteligencia artificial, agentes de IA, SQL Server, health check SQL Server, análisis financiero, dashboards, consultoría BI",
+    "ogDescription": "Dashboards Power BI, agentes de IA y diagnóstico de SQL Server para empresas que necesitan decidir con datos confiables.",
+    "twitterDescription": "BI, agentes de IA y diagnóstico de SQL Server para decidir con datos confiables.",
     "path": "/",
     "locale": "es_CO"
   },
@@ -44,12 +44,13 @@
       "label": "EN",
       "ariaLabel": "Open English version"
     },
-    "cta": "Empezar"
+    "cta": "Contactar",
+    "menuLabel": "Abrir menú"
   },
   "hero": {
     "eyebrow": "Consultor BI, Datos & IA",
-    "title": "Datos financieros listos para decidir, no solo para reportar.",
-    "lede": "Construyo dashboards Power BI, modelos P&L, automatizaciones con Python + SQL y agentes de IA para equipos que necesitan claridad ejecutiva en días, no en semanas.",
+    "title": "Datos, IA y bases de datos que trabajan para tu negocio.",
+    "lede": "Dashboards Power BI y análisis financiero, agentes de IA que se pueden auditar y diagnóstico de SQL Server: claridad ejecutiva en días, no en semanas.",
     "primaryCta": "Ver precios",
     "secondaryCta": "Ver resultados",
     "statsLabel": "Indicadores de experiencia",
@@ -106,6 +107,21 @@
       92,
       77,
       68
+    ],
+    "linksLabel": "Líneas de servicio",
+    "links": [
+      {
+        "href": "#servicios",
+        "label": "Dashboards & finanzas"
+      },
+      {
+        "href": "#ia",
+        "label": "Agentes de IA"
+      },
+      {
+        "href": "#portafolio",
+        "label": "Diagnóstico SQL Server"
+      }
     ]
   },
   "stack": {
@@ -841,7 +857,12 @@
     "emailLabel": "Correo directo",
     "linkedinUrl": "https://www.linkedin.com/in/jair-cantor-arciniegas/",
     "linkedinLabel": "LinkedIn",
-    "linkedinDescription": "Conectar y revisar perfil profesional"
+    "linkedinDescription": "Conectar y revisar perfil profesional",
+    "whatsapp": "573123495025",
+    "whatsappLabel": "WhatsApp",
+    "whatsappDescription": "Escríbeme y respondo el mismo día",
+    "whatsappMessage": "Hola Jair, vi tu sitio web y quiero conversar sobre un proyecto.",
+    "whatsappFloatLabel": "Escribir por WhatsApp"
   },
   "footer": {
     "tagline": "Jair Cantor. Consultor BI & Análisis Financiero.",

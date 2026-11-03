@@ -1,11 +1,11 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Jair Cantor | BI Consultant & Financial Analysis",
-    "description": "Power BI, Python, SQL, Excel, financial models, P&L analysis, report automation, and executive dashboard consulting. 18+ years in data and 6+ as a BI consultant.",
-    "keywords": "Power BI, Python, SQL, Excel, financial analysis, dashboards, ETL, BI consulting",
-    "ogDescription": "I build Power BI dashboards, P&L models, and Python + SQL automations for teams that need executive clarity.",
-    "twitterDescription": "I build Power BI dashboards, P&L models, and Python + SQL automations.",
+    "title": "Jair Cantor | BI, AI & SQL Server Consulting",
+    "description": "Power BI dashboards and financial analysis, auditable AI agents, and SQL Server diagnostics with BLACKBOX Wolf. 18+ years in data and 6+ as a BI consultant.",
+    "keywords": "Power BI, artificial intelligence, AI agents, SQL Server, SQL Server health check, financial analysis, dashboards, BI consulting",
+    "ogDescription": "Power BI dashboards, AI agents, and SQL Server diagnostics for companies that need to decide with reliable data.",
+    "twitterDescription": "BI, AI agents, and SQL Server diagnostics to decide with reliable data.",
     "path": "/en",
     "locale": "en_US"
   },
@@ -44,12 +44,13 @@
       "label": "ES",
       "ariaLabel": "Open Spanish version"
     },
-    "cta": "Start"
+    "cta": "Contact",
+    "menuLabel": "Open menu"
   },
   "hero": {
     "eyebrow": "BI, Data & AI Consultant",
-    "title": "Financial data ready for decisions, not just reports.",
-    "lede": "I build Power BI dashboards, P&L models, Python + SQL automations, and AI agents for teams that need executive clarity in days, not weeks.",
+    "title": "Data, AI, and databases that work for your business.",
+    "lede": "Power BI dashboards and financial analysis, AI agents you can audit, and SQL Server diagnostics: executive clarity in days, not weeks.",
     "primaryCta": "View pricing",
     "secondaryCta": "View results",
     "statsLabel": "Experience indicators",
@@ -106,6 +107,21 @@
       92,
       77,
       68
+    ],
+    "linksLabel": "Service lines",
+    "links": [
+      {
+        "href": "#servicios",
+        "label": "Dashboards & finance"
+      },
+      {
+        "href": "#ia",
+        "label": "AI agents"
+      },
+      {
+        "href": "#portafolio",
+        "label": "SQL Server diagnostics"
+      }
     ]
   },
   "stack": {
@@ -841,7 +857,12 @@
     "emailLabel": "Direct email",
     "linkedinUrl": "https://www.linkedin.com/in/jair-cantor-arciniegas/",
     "linkedinLabel": "LinkedIn",
-    "linkedinDescription": "Connect and review my professional profile"
+    "linkedinDescription": "Connect and review my professional profile",
+    "whatsapp": "573123495025",
+    "whatsappLabel": "WhatsApp",
+    "whatsappDescription": "Message me and I reply the same day",
+    "whatsappMessage": "Hi Jair, I saw your website and I'd like to talk about a project.",
+    "whatsappFloatLabel": "Message on WhatsApp"
   },
   "footer": {
     "tagline": "Jair Cantor. BI Consultant & Financial Analysis.",

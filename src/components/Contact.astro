@@ -1,6 +1,7 @@
 ---
 const { t } = Astro.props;
 const { contact } = t;
+const whatsappUrl = `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(contact.whatsappMessage)}`;
 ---
 <section class="final-cta" id="contacto">
   <div class="final-cta-copy">
@@ -9,14 +10,21 @@ const { contact } = t;
     <p>{contact.description}</p>
   </div>
   <div class="contact-links" aria-label={contact.linksLabel}>
-    <a class="contact-link contact-email" href={`mailto:${contact.email}`}>
+    <a class="contact-link contact-whatsapp" href={whatsappUrl} target="_blank" rel="noopener noreferrer" data-track="contact_whatsapp">
+      <span class="contact-icon" aria-hidden="true">W</span>
+      <span>
+        <strong>{contact.whatsappLabel}</strong>
+        <small>{contact.whatsappDescription}</small>
+      </span>
+    </a>
+    <a class="contact-link contact-email" href={`mailto:${contact.email}`} data-track="contact_email">
       <span class="contact-icon" aria-hidden="true">M</span>
       <span>
         <strong>{contact.emailLabel}</strong>
         <small>{contact.email}</small>
       </span>
     </a>
-    <a class="contact-link contact-linkedin" href={contact.linkedinUrl} target="_blank" rel="noopener noreferrer">
+    <a class="contact-link contact-linkedin" href={contact.linkedinUrl} target="_blank" rel="noopener noreferrer" data-track="contact_linkedin">
       <span class="contact-icon" aria-hidden="true">in</span>
       <span>
         <strong>{contact.linkedinLabel}</strong>
@@ -25,3 +33,4 @@ const { contact } = t;
     </a>
   </div>
 </section>
+
