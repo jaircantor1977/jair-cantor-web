@@ -607,7 +607,7 @@
     "ai": [
       {
         "name": "Diagnóstico de IA",
-        "price": "Por definir",
+        "price": "$490 USD",
         "priceNote": "Precio fijo",
         "delivery": "Duración: 1–2 semanas",
         "features": [
@@ -621,7 +621,7 @@
       },
       {
         "name": "Prueba de concepto / MVP",
-        "price": "Desde: por definir",
+        "price": "Cotización",
         "priceNote": "Según alcance",
         "delivery": "Duración: según alcance",
         "features": [
@@ -651,7 +651,7 @@
     "sql": [
       {
         "name": "Health Check SQL Server",
-        "price": "Por definir",
+        "price": "$350 USD",
         "priceNote": "Por instancia",
         "delivery": "Entrega: informe ejecutivo en PDF",
         "features": [
@@ -692,7 +692,7 @@
         "style": ""
       }
     ],
-    "sqlNote": "Descuento por varias instancias: por definir."
+    "sqlNote": "Descuento por volumen: consultar."
   },
   "packages": {
     "eyebrow": "Servicios & paquetes",

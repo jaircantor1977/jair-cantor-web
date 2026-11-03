@@ -607,7 +607,7 @@
     "ai": [
       {
         "name": "AI assessment",
-        "price": "TBD",
+        "price": "$490 USD",
         "priceNote": "Fixed price",
         "delivery": "Duration: 1–2 weeks",
         "features": [
@@ -621,7 +621,7 @@
       },
       {
         "name": "Proof of concept / MVP",
-        "price": "From: TBD",
+        "price": "Quote",
         "priceNote": "By scope",
         "delivery": "Duration: by scope",
         "features": [
@@ -651,7 +651,7 @@
     "sql": [
       {
         "name": "SQL Server Health Check",
-        "price": "TBD",
+        "price": "$350 USD",
         "priceNote": "Per instance",
         "delivery": "Delivery: executive PDF report",
         "features": [
@@ -692,7 +692,7 @@
         "style": ""
       }
     ],
-    "sqlNote": "Multi-instance discount: TBD."
+    "sqlNote": "Volume discount: ask us."
   },
   "packages": {
     "eyebrow": "Services & packages",
