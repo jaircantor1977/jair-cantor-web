@@ -22,6 +22,9 @@ const animationSelectors = [
   ".price-card",
   ".extra-card",
   ".trust-grid article",
+  ".ai-card",
+  ".product-feature",
+  ".project-card",
 ];
 
 // Clase para animación de entrada

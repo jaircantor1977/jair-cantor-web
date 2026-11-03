@@ -1,0 +1,83 @@
+---
+const { t } = Astro.props;
+const { portfolio } = t;
+const { product } = portfolio;
+---
+<section class="section dark portfolio-section" id="portafolio">
+  <div class="section-intro">
+    <p class="eyebrow">{portfolio.eyebrow}</p>
+    <h2>{portfolio.title}</h2>
+    <p>{portfolio.description}</p>
+  </div>
+
+  <article class="product-feature">
+    <div class="product-copy">
+      <p class="case-kicker">{product.kicker}</p>
+      <img class="product-logo" src={product.logo} width="250" height="64" alt={product.logoAlt}>
+      <h3>{product.tagline}</h3>
+      <p>{product.description}</p>
+      <ul class="product-features">
+        {product.features.map((feature) => <li>{feature}</li>)}
+      </ul>
+      <ul class="tag-list">
+        {product.stack.map((item) => <li>{item}</li>)}
+      </ul>
+      <div class="product-actions">
+        <a class="button primary" href="#contacto">{product.cta}</a>
+        <span>{product.status}</span>
+      </div>
+    </div>
+    <div class="product-visual" aria-hidden="true">
+      <div class="wolf-console">
+        <div class="wolf-console-top">
+          <span></span><span></span><span></span>
+          <b>health_report.pdf</b>
+        </div>
+        <div class="wolf-score">
+          <div class="wolf-gauge" style="--score: 78"><strong>78</strong><small>/100</small></div>
+          <ul>
+            <li><span>Performance</span><i style="--w: 82%"></i></li>
+            <li><span>Backups</span><i style="--w: 64%" class="warn"></i></li>
+            <li><span>Security</span><i style="--w: 71%"></i></li>
+            <li><span>Availability</span><i style="--w: 93%"></i></li>
+            <li><span>Configuration</span><i style="--w: 58%" class="warn"></i></li>
+          </ul>
+        </div>
+        <div class="wolf-findings">
+          <p><b class="sev high">HIGH</b> TempDB: 1 file / 8 CPUs</p>
+          <p><b class="sev med">MED</b> MAXDOP = 0 · cost threshold 5</p>
+          <p><b class="sev ok">OK</b> Full backups &lt; 24 h</p>
+        </div>
+      </div>
+      <dl class="product-metrics">
+        {product.metrics.map((metric) => (
+          <div>
+            <dt>{metric.value}</dt>
+            <dd>{metric.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </article>
+
+  <h3 class="projects-title">{portfolio.projectsTitle}</h3>
+  <div class="projects-grid">
+    {portfolio.projects.map((project) => (
+      <article class:list={["project-card", { "has-image": project.image }]}>
+        {project.image && <img src={project.image} width="1200" height="717" loading="lazy" decoding="async" alt={project.alt}>}
+        <div class="project-body">
+          <p class="case-kicker">{project.kicker}</p>
+          <h4>{project.name}</h4>
+          <strong class="project-title">{project.title}</strong>
+          <p>{project.description}</p>
+          <ul class="project-highlights">
+            {project.highlights.map((item) => <li>{item}</li>)}
+          </ul>
+          <ul class="tag-list">
+            {project.stack.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

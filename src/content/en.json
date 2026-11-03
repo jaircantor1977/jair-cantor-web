@@ -18,8 +18,12 @@
         "label": "Services"
       },
       {
-        "href": "#dashboards",
-        "label": "Dashboards"
+        "href": "#ia",
+        "label": "AI"
+      },
+      {
+        "href": "#portafolio",
+        "label": "Portfolio"
       },
       {
         "href": "#casos",
@@ -43,9 +47,9 @@
     "cta": "Start"
   },
   "hero": {
-    "eyebrow": "BI Consultant & Financial Analysis",
+    "eyebrow": "BI, Data & AI Consultant",
     "title": "Financial data ready for decisions, not just reports.",
-    "lede": "I build Power BI dashboards, P&L models, forecasts, pitch decks, and Python + SQL automations for teams that need executive clarity in days, not weeks.",
+    "lede": "I build Power BI dashboards, P&L models, Python + SQL automations, and AI agents for teams that need executive clarity in days, not weeks.",
     "primaryCta": "View packages",
     "secondaryCta": "View results",
     "statsLabel": "Experience indicators",
@@ -109,7 +113,10 @@
       "Advanced Excel",
       "DAX",
       "Pandas",
-      "PowerPoint"
+      "PowerPoint",
+      "watsonx Orchestrate",
+      "Claude",
+      "Gemini"
     ]
   },
   "dashboards": {
@@ -330,6 +337,205 @@
       {
         "title": "Automated reports",
         "description": "PDFs, presentations, or editable files generated with one click or on a schedule."
+      }
+    ]
+  },
+  "ai": {
+    "eyebrow": "AI services",
+    "title": "Artificial intelligence you can audit, not just demo.",
+    "description": "I design agents, vision workflows, and assistants that work on your real data and processes: with explicit rules, human review where it matters, and traceability for every decision.",
+    "services": [
+      {
+        "title": "AI agents for processes",
+        "description": "Agents that run multi-step processes, query your systems, and ask a person to validate when a result is uncertain.",
+        "tags": [
+          "watsonx Orchestrate",
+          "Claude",
+          "HITL"
+        ]
+      },
+      {
+        "title": "Vision and document extraction",
+        "description": "Reading checks, financial statements, invoices, and PDFs with per-field confidence and deterministic validations.",
+        "tags": [
+          "OCR/ICR",
+          "Gemini",
+          "watsonx.ai"
+        ]
+      },
+      {
+        "title": "AI for data and databases",
+        "description": "SQL Server diagnostics, finding correlation, and risk prioritization without sending sensitive data to the model.",
+        "tags": [
+          "SQL Server",
+          "Claude",
+          "Ollama"
+        ]
+      },
+      {
+        "title": "AI-generated executive reports",
+        "description": "Management reports built from emails, PDFs, and monitoring, with every figure validated against the source.",
+        "tags": [
+          "Python",
+          "PDF",
+          "Power BI"
+        ]
+      },
+      {
+        "title": "Sales and document automation",
+        "description": "Finding and scoring opportunities, analyzing tender documents, and drafting proposals ready for review.",
+        "tags": [
+          "APIs",
+          "Scoring",
+          "Word"
+        ]
+      },
+      {
+        "title": "Strategy and proof of concept",
+        "description": "Feasibility study, architecture, and a working MVP in weeks so you can decide with evidence before investing.",
+        "tags": [
+          "Architecture",
+          "MVP",
+          "Security"
+        ]
+      }
+    ],
+    "principlesTitle": "How I build AI",
+    "principles": [
+      {
+        "title": "AI explains, rules decide",
+        "description": "Critical decisions come from explicit, verifiable rules; the model orchestrates, argues, and explains."
+      },
+      {
+        "title": "Human in the loop",
+        "description": "When confidence is low, the system asks a person instead of guessing."
+      },
+      {
+        "title": "Your data under control",
+        "description": "Credentials and sensitive data never reach the model; they are sanitized or pseudonymized first."
+      },
+      {
+        "title": "Full traceability",
+        "description": "Audit logs, schema-validated outputs, and reproducible results."
+      }
+    ],
+    "cta": "Let's talk about your process",
+    "ctaNote": "Custom AI projects: quoted by scope."
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "AI products and solutions built end to end.",
+    "description": "From architecture and data model to interface and security: in-house applications and solutions built for clients.",
+    "product": {
+      "kicker": "In-house product",
+      "name": "BLACKBOX Wolf",
+      "tagline": "Intelligent diagnostics for SQL Server.",
+      "description": "A web platform that analyzes SQL Server 2012–2022 instances, scores health by category, and delivers findings with actionable recommendations and an executive PDF report. It never runs changes: the DBA decides.",
+      "features": [
+        "16-phase diagnostic with real-time progress",
+        "0–100 health score by category and overall",
+        "Offline mode: the client runs read-only scripts without opening their network",
+        "Declarative rule engine based on best practices",
+        "Augmentative AI that correlates and prioritizes, with sanitized data",
+        "AES-256-GCM encrypted credentials, roles, and audit trail"
+      ],
+      "stack": [
+        ".NET 8",
+        "Next.js",
+        "React",
+        "SignalR",
+        "Claude",
+        "QuestPDF"
+      ],
+      "status": "Demo available on request",
+      "cta": "Request a demo",
+      "logo": "/portfolio/blackbox-wolf-logo.svg",
+      "logoAlt": "BLACKBOX Wolf logo",
+      "metrics": [
+        {
+          "value": "16",
+          "label": "diagnostic phases"
+        },
+        {
+          "value": "0–100",
+          "label": "health score"
+        },
+        {
+          "value": "2012–2022",
+          "label": "SQL Server versions"
+        }
+      ]
+    },
+    "projectsTitle": "AI solutions",
+    "projects": [
+      {
+        "kicker": "Banking · Guatemala · MVP",
+        "name": "FQ4 CheckIQ",
+        "title": "Check verification agent",
+        "description": "Receives the check image, extracts its data, validates the amount in figures and words, legal requirements, account, signature, and signs of forgery, and issues a reasoned approve or reject assessment.",
+        "highlights": [
+          "8 verification steps",
+          "Human validation for uncertain cases",
+          "Hash-chained audit log"
+        ],
+        "stack": [
+          "watsonx Orchestrate",
+          "watsonx.ai",
+          "Python",
+          "Angular"
+        ],
+        "image": "/portfolio/checkiq.webp",
+        "alt": "FQ4 CheckIQ screen with signature comparison and chat with the verification agent (fictitious data)"
+      },
+      {
+        "kicker": "Finance · Mobile app",
+        "name": "FQ4 Credit IQ Lite",
+        "title": "AI financial statement analysis",
+        "description": "Photograph or import a financial statement and get an IFRS-based analysis in plain language. Ratios are recomputed on the device, so the figures never depend on model arithmetic.",
+        "highlights": [
+          "Classification, extraction, and summary in 4 stages",
+          "Editable review before analysis",
+          "iOS and Android"
+        ],
+        "stack": [
+          "Gemini",
+          "React Native",
+          "Expo",
+          "IFRS"
+        ]
+      },
+      {
+        "kicker": "Public sector · Prospecting",
+        "name": "SECOP TI",
+        "title": "Public procurement pipeline",
+        "description": "Daily queries to the SECOP II API, scoring of IT tenders, a prioritized Excel file, opportunity analysis, and an AI-drafted technical proposal.",
+        "highlights": [
+          "API → scoring → proposal",
+          "Filters by region and amount",
+          "Tender follow-up"
+        ],
+        "stack": [
+          "Python",
+          "SECOP II API",
+          "Claude",
+          "Word"
+        ]
+      },
+      {
+        "kicker": "Insurance · Data operations",
+        "name": "Monitoring reports",
+        "title": "AI-generated management reports",
+        "description": "A historical executive report of production SQL Server monitoring, built from daily email and PDF reports, with trends, alerts, and recommendations.",
+        "highlights": [
+          "Extraction from emails and PDFs",
+          "No invented figures: data audit",
+          "Executive dashboard design"
+        ],
+        "stack": [
+          "Claude",
+          "SQL Server",
+          "PDF"
+        ]
       }
     ]
   },

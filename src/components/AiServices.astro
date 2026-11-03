@@ -1,0 +1,39 @@
+---
+const { t } = Astro.props;
+const { ai } = t;
+const number = (index) => String(index + 1).padStart(2, "0");
+---
+<section class="section ai-section" id="ia">
+  <div class="section-intro">
+    <p class="eyebrow">{ai.eyebrow}</p>
+    <h2>{ai.title}</h2>
+    <p>{ai.description}</p>
+  </div>
+  <div class="ai-grid">
+    {ai.services.map((service, index) => (
+      <article class="ai-card">
+        <span class="ai-card-number">{number(index)}</span>
+        <h3>{service.title}</h3>
+        <p>{service.description}</p>
+        <ul class="tag-list">
+          {service.tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+      </article>
+    ))}
+  </div>
+  <div class="ai-principles">
+    <h3>{ai.principlesTitle}</h3>
+    <div class="ai-principles-grid">
+      {ai.principles.map((principle) => (
+        <article>
+          <strong>{principle.title}</strong>
+          <p>{principle.description}</p>
+        </article>
+      ))}
+    </div>
+    <div class="ai-cta">
+      <a class="button primary" href="#contacto">{ai.cta}</a>
+      <span>{ai.ctaNote}</span>
+    </div>
+  </div>
+</section>

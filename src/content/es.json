@@ -18,8 +18,12 @@
         "label": "Servicios"
       },
       {
-        "href": "#dashboards",
-        "label": "Dashboards"
+        "href": "#ia",
+        "label": "IA"
+      },
+      {
+        "href": "#portafolio",
+        "label": "Portafolio"
       },
       {
         "href": "#casos",
@@ -43,9 +47,9 @@
     "cta": "Empezar"
   },
   "hero": {
-    "eyebrow": "Consultor BI & Análisis Financiero",
+    "eyebrow": "Consultor BI, Datos & IA",
     "title": "Datos financieros listos para decidir, no solo para reportar.",
-    "lede": "Construyo dashboards Power BI, modelos P&L, proyecciones, pitch decks y automatizaciones con Python + SQL para equipos que necesitan claridad ejecutiva en días, no en semanas.",
+    "lede": "Construyo dashboards Power BI, modelos P&L, automatizaciones con Python + SQL y agentes de IA para equipos que necesitan claridad ejecutiva en días, no en semanas.",
     "primaryCta": "Ver paquetes",
     "secondaryCta": "Ver resultados",
     "statsLabel": "Indicadores de experiencia",
@@ -109,7 +113,10 @@
       "Excel Avanzado",
       "DAX",
       "Pandas",
-      "PowerPoint"
+      "PowerPoint",
+      "watsonx Orchestrate",
+      "Claude",
+      "Gemini"
     ]
   },
   "dashboards": {
@@ -330,6 +337,205 @@
       {
         "title": "Reportes automáticos",
         "description": "Generación de PDFs, presentaciones o archivos editables con un clic o en horario programado."
+      }
+    ]
+  },
+  "ai": {
+    "eyebrow": "Servicios de IA",
+    "title": "Inteligencia artificial que se puede auditar, no solo demostrar.",
+    "description": "Diseño agentes, flujos de visión y asistentes que trabajan sobre tus datos y procesos reales: con reglas explícitas, revisión humana donde importa y trazabilidad de cada decisión.",
+    "services": [
+      {
+        "title": "Agentes de IA para procesos",
+        "description": "Agentes que ejecutan procesos de varios pasos, consultan tus sistemas y piden validación humana cuando un resultado es dudoso.",
+        "tags": [
+          "watsonx Orchestrate",
+          "Claude",
+          "HITL"
+        ]
+      },
+      {
+        "title": "Visión y extracción documental",
+        "description": "Lectura de cheques, estados financieros, facturas y PDFs con confianza por campo y validaciones deterministas.",
+        "tags": [
+          "OCR/ICR",
+          "Gemini",
+          "watsonx.ai"
+        ]
+      },
+      {
+        "title": "IA para datos y bases de datos",
+        "description": "Diagnóstico de SQL Server, correlación de hallazgos y priorización de riesgos sin enviar datos sensibles al modelo.",
+        "tags": [
+          "SQL Server",
+          "Claude",
+          "Ollama"
+        ]
+      },
+      {
+        "title": "Reportes ejecutivos con IA",
+        "description": "Informes gerenciales generados desde correos, PDFs y monitoreo, con validación de cada cifra contra la fuente.",
+        "tags": [
+          "Python",
+          "PDF",
+          "Power BI"
+        ]
+      },
+      {
+        "title": "Automatización comercial y documental",
+        "description": "Búsqueda y calificación de oportunidades, análisis de pliegos y borradores de propuestas listos para revisar.",
+        "tags": [
+          "APIs",
+          "Scoring",
+          "Word"
+        ]
+      },
+      {
+        "title": "Estrategia y prueba de concepto",
+        "description": "Estudio de factibilidad, arquitectura y MVP funcional en semanas para decidir con evidencia antes de invertir.",
+        "tags": [
+          "Arquitectura",
+          "MVP",
+          "Seguridad"
+        ]
+      }
+    ],
+    "principlesTitle": "Cómo construyo IA",
+    "principles": [
+      {
+        "title": "La IA explica, las reglas deciden",
+        "description": "Las decisiones críticas salen de reglas explícitas y verificables; el modelo orquesta, argumenta y explica."
+      },
+      {
+        "title": "Humano en el ciclo",
+        "description": "Cuando la confianza es baja, el sistema pregunta a una persona en lugar de adivinar."
+      },
+      {
+        "title": "Tus datos bajo control",
+        "description": "Credenciales y datos sensibles nunca llegan al modelo; se sanitizan o seudonimizan antes."
+      },
+      {
+        "title": "Trazabilidad completa",
+        "description": "Bitácoras de auditoría, salidas validadas contra esquema y resultados reproducibles."
+      }
+    ],
+    "cta": "Conversemos sobre tu proceso",
+    "ctaNote": "Proyectos de IA a la medida: cotización según alcance."
+  },
+  "portfolio": {
+    "eyebrow": "Portafolio",
+    "title": "Productos y soluciones de IA construidos de punta a punta.",
+    "description": "Desde la arquitectura y el modelo de datos hasta la interfaz y la seguridad: aplicaciones propias y soluciones desarrolladas para clientes.",
+    "product": {
+      "kicker": "Producto propio",
+      "name": "BLACKBOX Wolf",
+      "tagline": "Diagnóstico inteligente para SQL Server.",
+      "description": "Plataforma web que analiza instancias SQL Server 2012–2022, calcula un puntaje de salud por categoría y entrega hallazgos con recomendaciones accionables y un informe ejecutivo en PDF. Nunca ejecuta cambios: el DBA decide.",
+      "features": [
+        "Diagnóstico en 16 fases con progreso en tiempo real",
+        "Puntaje de salud 0–100 por categoría y global",
+        "Modo offline: el cliente ejecuta scripts de solo lectura sin abrir su red",
+        "Motor de reglas declarativo basado en buenas prácticas",
+        "IA aumentativa que correlaciona y prioriza, con datos sanitizados",
+        "Credenciales cifradas AES-256-GCM, roles y auditoría"
+      ],
+      "stack": [
+        ".NET 8",
+        "Next.js",
+        "React",
+        "SignalR",
+        "Claude",
+        "QuestPDF"
+      ],
+      "status": "Demo disponible bajo solicitud",
+      "cta": "Solicitar demo",
+      "logo": "/portfolio/blackbox-wolf-logo.svg",
+      "logoAlt": "Logo de BLACKBOX Wolf",
+      "metrics": [
+        {
+          "value": "16",
+          "label": "fases de diagnóstico"
+        },
+        {
+          "value": "0–100",
+          "label": "health score"
+        },
+        {
+          "value": "2012–2022",
+          "label": "versiones de SQL Server"
+        }
+      ]
+    },
+    "projectsTitle": "Soluciones de IA",
+    "projects": [
+      {
+        "kicker": "Banca · Guatemala · MVP",
+        "name": "FQ4 CheckIQ",
+        "title": "Agente verificador de cheques",
+        "description": "Recibe la imagen del cheque, extrae sus datos, valida monto en cifras y letras, requisitos legales, cuenta, firma e indicios de falsificación, y emite un dictamen argumentado de aprobar o rechazar.",
+        "highlights": [
+          "8 pasos de verificación",
+          "Validación humana en casos dudosos",
+          "Bitácora de auditoría encadenada"
+        ],
+        "stack": [
+          "watsonx Orchestrate",
+          "watsonx.ai",
+          "Python",
+          "Angular"
+        ],
+        "image": "/portfolio/checkiq.webp",
+        "alt": "Pantalla de FQ4 CheckIQ con comparación de firmas y chat con el agente verificador (datos ficticios)"
+      },
+      {
+        "kicker": "Finanzas · App móvil",
+        "name": "FQ4 Credit IQ Lite",
+        "title": "Análisis de estados financieros con IA",
+        "description": "Fotografía o importa un estado financiero y recibe un análisis basado en IFRS en lenguaje claro. Los ratios se recalculan en el dispositivo, así que las cifras no dependen de la aritmética del modelo.",
+        "highlights": [
+          "Clasificación, extracción y resumen en 4 etapas",
+          "Revisión editable antes de analizar",
+          "iOS y Android"
+        ],
+        "stack": [
+          "Gemini",
+          "React Native",
+          "Expo",
+          "IFRS"
+        ]
+      },
+      {
+        "kicker": "Sector público · Prospección",
+        "name": "SECOP TI",
+        "title": "Pipeline de contratación pública",
+        "description": "Consulta diaria de la API de SECOP II, calificación de procesos TI, Excel priorizado, análisis de oportunidad y borrador de propuesta técnica con IA.",
+        "highlights": [
+          "API → scoring → propuesta",
+          "Filtros por región y cuantía",
+          "Seguimiento de procesos"
+        ],
+        "stack": [
+          "Python",
+          "API SECOP II",
+          "Claude",
+          "Word"
+        ]
+      },
+      {
+        "kicker": "Seguros · Operación de datos",
+        "name": "Informes de monitoreo",
+        "title": "Reportes gerenciales generados con IA",
+        "description": "Informe histórico ejecutivo del monitoreo de SQL Server de producción, construido a partir de los reportes diarios en correo y PDF, con tendencias, alertas y recomendaciones.",
+        "highlights": [
+          "Extracción desde correos y PDFs",
+          "Ninguna cifra inventada: auditoría de datos",
+          "Diseño tipo dashboard ejecutivo"
+        ],
+        "stack": [
+          "Claude",
+          "SQL Server",
+          "PDF"
+        ]
       }
     ]
   },
