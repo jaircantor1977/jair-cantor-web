@@ -2,7 +2,7 @@
   "lang": "en",
   "meta": {
     "title": "Jair Cantor | BI Consultant & Financial Analysis",
-    "description": "Power BI, Python, SQL, Excel, financial models, P&L analysis, report automation, and executive dashboard consulting. 6+ years of experience.",
+    "description": "Power BI, Python, SQL, Excel, financial models, P&L analysis, report automation, and executive dashboard consulting. 18+ years in data and 6+ as a BI consultant.",
     "keywords": "Power BI, Python, SQL, Excel, financial analysis, dashboards, ETL, BI consulting",
     "ogDescription": "I build Power BI dashboards, P&L models, and Python + SQL automations for teams that need executive clarity.",
     "twitterDescription": "I build Power BI dashboards, P&L models, and Python + SQL automations.",
@@ -55,8 +55,12 @@
     "statsLabel": "Experience indicators",
     "stats": [
       {
+        "value": "18+",
+        "label": "years in data and mission-critical platforms"
+      },
+      {
         "value": "6+",
-        "label": "years of experience"
+        "label": "years as a BI consultant"
       },
       {
         "value": "30+",
@@ -464,7 +468,22 @@
           "value": "2012–2022",
           "label": "SQL Server versions"
         }
-      ]
+      ],
+      "screenshots": [
+        {
+          "src": "/portfolio/wolf-diagnostic.webp",
+          "alt": "BLACKBOX Wolf diagnostic of a lab instance: steps, health score 67, and score by category"
+        },
+        {
+          "src": "/portfolio/wolf-dashboard.webp",
+          "alt": "BLACKBOX Wolf dashboard showing SQL Server fleet health"
+        },
+        {
+          "src": "/portfolio/wolf-instance.webp",
+          "alt": "BLACKBOX Wolf instance page with server identity and diagnostic history"
+        }
+      ],
+      "screenshotNote": "Real screenshots with lab data."
     },
     "projectsTitle": "AI solutions",
     "projects": [

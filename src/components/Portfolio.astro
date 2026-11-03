@@ -27,28 +27,20 @@ const { product } = portfolio;
         <span>{product.status}</span>
       </div>
     </div>
-    <div class="product-visual" aria-hidden="true">
-      <div class="wolf-console">
-        <div class="wolf-console-top">
-          <span></span><span></span><span></span>
-          <b>health_report.pdf</b>
+    <div class="product-visual">
+      <figure class="product-shots">
+        <a class="product-shot-main" href={product.screenshots[0].src} target="_blank" rel="noopener">
+          <img src={product.screenshots[0].src} width="1600" height="1000" loading="lazy" decoding="async" alt={product.screenshots[0].alt}>
+        </a>
+        <div class="product-shot-row">
+          {product.screenshots.slice(1).map((shot) => (
+            <a href={shot.src} target="_blank" rel="noopener">
+              <img src={shot.src} width="1600" height="1000" loading="lazy" decoding="async" alt={shot.alt}>
+            </a>
+          ))}
         </div>
-        <div class="wolf-score">
-          <div class="wolf-gauge" style="--score: 78"><strong>78</strong><small>/100</small></div>
-          <ul>
-            <li><span>Performance</span><i style="--w: 82%"></i></li>
-            <li><span>Backups</span><i style="--w: 64%" class="warn"></i></li>
-            <li><span>Security</span><i style="--w: 71%"></i></li>
-            <li><span>Availability</span><i style="--w: 93%"></i></li>
-            <li><span>Configuration</span><i style="--w: 58%" class="warn"></i></li>
-          </ul>
-        </div>
-        <div class="wolf-findings">
-          <p><b class="sev high">HIGH</b> TempDB: 1 file / 8 CPUs</p>
-          <p><b class="sev med">MED</b> MAXDOP = 0 · cost threshold 5</p>
-          <p><b class="sev ok">OK</b> Full backups &lt; 24 h</p>
-        </div>
-      </div>
+        <figcaption>{product.screenshotNote}</figcaption>
+      </figure>
       <dl class="product-metrics">
         {product.metrics.map((metric) => (
           <div>

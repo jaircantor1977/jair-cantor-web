@@ -2,7 +2,7 @@
   "lang": "es",
   "meta": {
     "title": "Jair Cantor | Consultor BI & Análisis Financiero",
-    "description": "Consultoría en Power BI, Python, SQL, Excel, modelos financieros, análisis P&L, automatización de reportes y dashboards ejecutivos. 6+ años de experiencia.",
+    "description": "Consultoría en Power BI, Python, SQL, Excel, modelos financieros, análisis P&L, automatización de reportes y dashboards ejecutivos. 18+ años en datos y 6+ como consultor BI.",
     "keywords": "Power BI, Python, SQL, Excel, análisis financiero, dashboards, ETL, consultoría BI",
     "ogDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones Python + SQL para equipos que necesitan claridad ejecutiva.",
     "twitterDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones con Python + SQL.",
@@ -55,8 +55,12 @@
     "statsLabel": "Indicadores de experiencia",
     "stats": [
       {
+        "value": "18+",
+        "label": "años en datos y plataformas críticas"
+      },
+      {
         "value": "6+",
-        "label": "años de experiencia"
+        "label": "años como consultor BI"
       },
       {
         "value": "30+",
@@ -464,7 +468,22 @@
           "value": "2012–2022",
           "label": "versiones de SQL Server"
         }
-      ]
+      ],
+      "screenshots": [
+        {
+          "src": "/portfolio/wolf-diagnostic.webp",
+          "alt": "Diagnóstico de una instancia de laboratorio en BLACKBOX Wolf: pasos, puntaje de salud 67 y puntaje por categoría"
+        },
+        {
+          "src": "/portfolio/wolf-dashboard.webp",
+          "alt": "Dashboard de BLACKBOX Wolf con la salud del parque SQL Server"
+        },
+        {
+          "src": "/portfolio/wolf-instance.webp",
+          "alt": "Ficha de instancia en BLACKBOX Wolf con identidad del servidor e historial de diagnósticos"
+        }
+      ],
+      "screenshotNote": "Capturas reales con datos de laboratorio."
     },
     "projectsTitle": "Soluciones de IA",
     "projects": [
