@@ -1,0 +1,16 @@
+---
+const { plan } = Astro.props;
+// Text prices ("Por definir", "Cotización", "Sin costo") get a smaller type size than "$450 USD".
+const isAmount = /^\$\s?\d/.test(plan.price);
+---
+<article class:list={["price-card", plan.style]}>
+  {plan.badge && <div class="badge">{plan.badge}</div>}
+  <p>{plan.name}</p>
+  <h3 class:list={{ "price-text": !isAmount }}>{plan.price}</h3>
+  {plan.priceNote && <small class="price-note">{plan.priceNote}</small>}
+  <span>{plan.delivery}</span>
+  <ul>
+    {plan.features.map((feature) => <li>{feature}</li>)}
+  </ul>
+  {plan.cta && <a class="button primary price-cta" href="#contacto">{plan.cta}</a>}
+</article>

@@ -1,54 +1,82 @@
 ---
+import PriceCard from "./PriceCard.astro";
+
 const { t } = Astro.props;
-const { packages, additionalServices: extras } = t;
+const { pricing, packages, additionalServices: extras } = t;
 const number = (index) => String(index + 1).padStart(2, "0");
+const [biTab, aiTab, sqlTab] = pricing.tabs;
 ---
 <section class="section pricing-section" id="paquetes">
   <div class="section-intro">
-    <p class="eyebrow">{packages.eyebrow}</p>
-    <h2>{packages.title}</h2>
-    <p>{packages.description}</p>
+    <p class="eyebrow">{pricing.eyebrow}</p>
+    <h2>{pricing.title}</h2>
+    <p>{pricing.description}</p>
   </div>
-  <div class="pricing-grid">
-    {packages.items.map((plan) => (
-      <article class:list={["price-card", plan.style]}>
-        {plan.badge && <div class="badge">{plan.badge}</div>}
-        <p>{plan.name}</p>
-        <h3>{plan.price}</h3>
-        <span>{plan.delivery}</span>
-        <ul>
-          {plan.features.map((feature) => <li>{feature}</li>)}
-        </ul>
-      </article>
+
+  <div class="pricing-tabs" role="tablist" aria-label={pricing.tabsLabel} data-pricing-tabs>
+    {pricing.tabs.map((tab, index) => (
+      <button
+        class:list={["pricing-tab", { "is-active": index === 0 }]}
+        type="button"
+        role="tab"
+        id={`tab-precios-${tab.key}`}
+        aria-controls={`precios-${tab.key}`}
+        aria-selected={index === 0 ? "true" : "false"}
+        data-pricing-tab={tab.key}
+      >{tab.label}</button>
     ))}
   </div>
-  <div class="extras">
-    <div class="extras-header">
-      <div class="extras-copy">
-        <h3>{extras.title}</h3>
-        <p>{extras.description}</p>
-      </div>
-      <span class="extras-label">{extras.label}</span>
+
+  <div class="pricing-panel" id={`precios-${biTab.key}`} role="tabpanel" aria-labelledby={`tab-precios-${biTab.key}`} data-pricing-panel={biTab.key}>
+    <p class="pricing-intro">{biTab.intro}</p>
+    <div class="pricing-grid">
+      {packages.items.map((plan) => <PriceCard plan={plan} />)}
     </div>
-    <div class="extras-grid">
-      {extras.items.map((item, index) => (
-        <article class="extra-card">
-          <button class="extra-card-toggle" type="button" aria-expanded="false" aria-controls={`extra-details-${index + 1}`}>
-            <span class="extra-card-number">{number(index)}</span>
-            <span class="extra-card-content">
-              <strong>{item.name}</strong>
-              <small>{item.description}</small>
-            </span>
-            <b class="extra-card-price">{item.price}</b>
-            <span class="extra-card-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="extra-card-details" id={`extra-details-${index + 1}`} hidden>
-            <ul>
-              {item.details.map((detail) => <li>{detail}</li>)}
-            </ul>
-          </div>
-        </article>
-      ))}
+    <div class="extras">
+      <div class="extras-header">
+        <div class="extras-copy">
+          <h3>{extras.title}</h3>
+          <p>{extras.description}</p>
+        </div>
+        <span class="extras-label">{extras.label}</span>
+      </div>
+      <div class="extras-grid">
+        {extras.items.map((item, index) => (
+          <article class="extra-card">
+            <button class="extra-card-toggle" type="button" aria-expanded="false" aria-controls={`extra-details-${index + 1}`}>
+              <span class="extra-card-number">{number(index)}</span>
+              <span class="extra-card-content">
+                <strong>{item.name}</strong>
+                <small>{item.description}</small>
+              </span>
+              <b class="extra-card-price">{item.price}</b>
+              <span class="extra-card-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="extra-card-details" id={`extra-details-${index + 1}`} hidden>
+              <ul>
+                {item.details.map((detail) => <li>{detail}</li>)}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   </div>
+
+  <div class="pricing-panel" id={`precios-${aiTab.key}`} role="tabpanel" aria-labelledby={`tab-precios-${aiTab.key}`} data-pricing-panel={aiTab.key}>
+    <p class="pricing-intro">{aiTab.intro}</p>
+    <div class="pricing-grid">
+      {pricing.ai.map((plan) => <PriceCard plan={plan} />)}
+    </div>
+  </div>
+
+  <div class="pricing-panel" id={`precios-${sqlTab.key}`} role="tabpanel" aria-labelledby={`tab-precios-${sqlTab.key}`} data-pricing-panel={sqlTab.key}>
+    <p class="pricing-intro">{sqlTab.intro}</p>
+    <div class="pricing-grid">
+      {pricing.sql.map((plan) => <PriceCard plan={plan} />)}
+    </div>
+    <p class="pricing-subnote">{pricing.sqlNote}</p>
+  </div>
+
+  <p class="pricing-note">{pricing.note}</p>
 </section>

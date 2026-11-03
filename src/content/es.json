@@ -31,7 +31,7 @@
       },
       {
         "href": "#paquetes",
-        "label": "Paquetes"
+        "label": "Precios"
       },
       {
         "href": "#proceso",
@@ -50,7 +50,7 @@
     "eyebrow": "Consultor BI, Datos & IA",
     "title": "Datos financieros listos para decidir, no solo para reportar.",
     "lede": "Construyo dashboards Power BI, modelos P&L, automatizaciones con Python + SQL y agentes de IA para equipos que necesitan claridad ejecutiva en días, no en semanas.",
-    "primaryCta": "Ver paquetes",
+    "primaryCta": "Ver precios",
     "secondaryCta": "Ver resultados",
     "statsLabel": "Indicadores de experiencia",
     "stats": [
@@ -424,7 +424,8 @@
       }
     ],
     "cta": "Conversemos sobre tu proceso",
-    "ctaNote": "Proyectos de IA a la medida: cotización según alcance."
+    "ctaNote": "Proyectos de IA a la medida: cotización según alcance.",
+    "pricingLink": "Ver precios de IA"
   },
   "portfolio": {
     "eyebrow": "Portafolio",
@@ -483,7 +484,8 @@
           "alt": "Ficha de instancia en BLACKBOX Wolf con identidad del servidor e historial de diagnósticos"
         }
       ],
-      "screenshotNote": "Capturas reales con datos de laboratorio."
+      "screenshotNote": "Capturas reales con datos de laboratorio.",
+      "pricingLink": "Ver precios"
     },
     "projectsTitle": "Soluciones de IA",
     "projects": [
@@ -578,6 +580,119 @@
       "image": "/assets/case-retail-dashboard.webp",
       "alt": "Dashboard P&L ejecutivo para retail"
     }
+  },
+  "pricing": {
+    "eyebrow": "Precios",
+    "title": "Un modelo de precio para cada tipo de proyecto.",
+    "description": "Elige la línea de servicio: paquetes fijos para BI, fases para proyectos de IA y un diagnóstico por instancia para SQL Server.",
+    "tabsLabel": "Líneas de servicio",
+    "note": "Precios en USD. Cada proyecto incluye una propuesta con alcance y plazo antes de empezar.",
+    "tabs": [
+      {
+        "key": "bi",
+        "label": "BI & análisis financiero",
+        "intro": "Paquetes con alcance cerrado y entrega en días."
+      },
+      {
+        "key": "ia",
+        "label": "Inteligencia artificial",
+        "intro": "Proyectos por fases: empieza con un diagnóstico de precio fijo y avanza solo si los resultados lo justifican."
+      },
+      {
+        "key": "sql",
+        "label": "SQL Server & BLACKBOX Wolf",
+        "intro": "Diagnóstico de salud de tus instancias SQL Server con BLACKBOX Wolf y acompañamiento DBA."
+      }
+    ],
+    "ai": [
+      {
+        "name": "Diagnóstico de IA",
+        "price": "Por definir",
+        "priceNote": "Precio fijo",
+        "delivery": "Duración: 1–2 semanas",
+        "features": [
+          "Mapeo del proceso y de las fuentes de datos",
+          "Evaluación de factibilidad y riesgos",
+          "Arquitectura propuesta y estimación del MVP",
+          "Informe ejecutivo con recomendación"
+        ],
+        "cta": "Solicitar diagnóstico",
+        "style": ""
+      },
+      {
+        "name": "Prueba de concepto / MVP",
+        "price": "Desde: por definir",
+        "priceNote": "Según alcance",
+        "delivery": "Duración: según alcance",
+        "features": [
+          "Agente o flujo de IA funcionando de punta a punta",
+          "Pruebas con tus datos o con datos sintéticos",
+          "Validación humana y bitácora de auditoría",
+          "Demo con tu equipo y plan de producción"
+        ],
+        "cta": "Cotizar MVP",
+        "style": "featured"
+      },
+      {
+        "name": "Implementación y soporte",
+        "price": "Cotización",
+        "priceNote": "Proyecto o mensualidad",
+        "delivery": "Duración: según alcance",
+        "features": [
+          "Integración con tus sistemas",
+          "Puesta en producción con controles de seguridad",
+          "Monitoreo, ajustes y mejoras",
+          "Capacitación de tu equipo"
+        ],
+        "cta": "Cotizar proyecto",
+        "style": "premium"
+      }
+    ],
+    "sql": [
+      {
+        "name": "Health Check SQL Server",
+        "price": "Por definir",
+        "priceNote": "Por instancia",
+        "delivery": "Entrega: informe ejecutivo en PDF",
+        "features": [
+          "Diagnóstico en 16 fases con BLACKBOX Wolf",
+          "Puntaje de salud por categoría",
+          "Hallazgos priorizados con scripts sugeridos",
+          "Modo offline: sin acceso a tu red",
+          "Sesión de revisión de resultados"
+        ],
+        "cta": "Solicitar Health Check",
+        "style": "featured"
+      },
+      {
+        "name": "Acompañamiento DBA",
+        "price": "Cotización",
+        "priceNote": "Mensualidad",
+        "delivery": "Diagnósticos periódicos",
+        "features": [
+          "Diagnóstico periódico y comparación con el anterior",
+          "Seguimiento de mejoras y regresiones",
+          "Informe ejecutivo mensual",
+          "Soporte DBA para el plan de acción"
+        ],
+        "cta": "Cotizar acompañamiento",
+        "style": ""
+      },
+      {
+        "name": "Demo de BLACKBOX Wolf",
+        "price": "Sin costo",
+        "priceNote": "En línea",
+        "delivery": "Demo guiada",
+        "features": [
+          "Recorrido por el diagnóstico y los reportes",
+          "Ejemplo con datos de laboratorio",
+          "Resolución de dudas técnicas"
+        ],
+        "cta": "Agendar demo",
+        "style": ""
+      }
+    ],
+    "sqlNote": "Descuento por varias instancias: por definir."
   },
   "packages": {
     "eyebrow": "Servicios & paquetes",

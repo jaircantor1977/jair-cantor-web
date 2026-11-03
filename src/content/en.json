@@ -31,7 +31,7 @@
       },
       {
         "href": "#paquetes",
-        "label": "Packages"
+        "label": "Pricing"
       },
       {
         "href": "#proceso",
@@ -50,7 +50,7 @@
     "eyebrow": "BI, Data & AI Consultant",
     "title": "Financial data ready for decisions, not just reports.",
     "lede": "I build Power BI dashboards, P&L models, Python + SQL automations, and AI agents for teams that need executive clarity in days, not weeks.",
-    "primaryCta": "View packages",
+    "primaryCta": "View pricing",
     "secondaryCta": "View results",
     "statsLabel": "Experience indicators",
     "stats": [
@@ -424,7 +424,8 @@
       }
     ],
     "cta": "Let's talk about your process",
-    "ctaNote": "Custom AI projects: quoted by scope."
+    "ctaNote": "Custom AI projects: quoted by scope.",
+    "pricingLink": "View AI pricing"
   },
   "portfolio": {
     "eyebrow": "Portfolio",
@@ -483,7 +484,8 @@
           "alt": "BLACKBOX Wolf instance page with server identity and diagnostic history"
         }
       ],
-      "screenshotNote": "Real screenshots with lab data."
+      "screenshotNote": "Real screenshots with lab data.",
+      "pricingLink": "View pricing"
     },
     "projectsTitle": "AI solutions",
     "projects": [
@@ -578,6 +580,119 @@
       "image": "/assets/case-retail-dashboard.webp",
       "alt": "Executive P&L dashboard for retail"
     }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "A pricing model for each kind of project.",
+    "description": "Choose the service line: fixed packages for BI, phases for AI projects, and a per-instance health check for SQL Server.",
+    "tabsLabel": "Service lines",
+    "note": "Prices in USD. Every project includes a proposal with scope and timeline before we start.",
+    "tabs": [
+      {
+        "key": "bi",
+        "label": "BI & financial analysis",
+        "intro": "Fixed-scope packages delivered in days."
+      },
+      {
+        "key": "ia",
+        "label": "Artificial intelligence",
+        "intro": "Phased projects: start with a fixed-price assessment and move forward only if the results justify it."
+      },
+      {
+        "key": "sql",
+        "label": "SQL Server & BLACKBOX Wolf",
+        "intro": "Health checks for your SQL Server instances with BLACKBOX Wolf, plus DBA support."
+      }
+    ],
+    "ai": [
+      {
+        "name": "AI assessment",
+        "price": "TBD",
+        "priceNote": "Fixed price",
+        "delivery": "Duration: 1–2 weeks",
+        "features": [
+          "Process and data source mapping",
+          "Feasibility and risk assessment",
+          "Proposed architecture and MVP estimate",
+          "Executive report with a recommendation"
+        ],
+        "cta": "Request an assessment",
+        "style": ""
+      },
+      {
+        "name": "Proof of concept / MVP",
+        "price": "From: TBD",
+        "priceNote": "By scope",
+        "delivery": "Duration: by scope",
+        "features": [
+          "AI agent or workflow running end to end",
+          "Tests with your data or synthetic data",
+          "Human validation and audit log",
+          "Demo with your team and a production plan"
+        ],
+        "cta": "Quote an MVP",
+        "style": "featured"
+      },
+      {
+        "name": "Implementation and support",
+        "price": "Quote",
+        "priceNote": "Project or monthly",
+        "delivery": "Duration: by scope",
+        "features": [
+          "Integration with your systems",
+          "Production rollout with security controls",
+          "Monitoring, tuning, and improvements",
+          "Training for your team"
+        ],
+        "cta": "Get a quote",
+        "style": "premium"
+      }
+    ],
+    "sql": [
+      {
+        "name": "SQL Server Health Check",
+        "price": "TBD",
+        "priceNote": "Per instance",
+        "delivery": "Delivery: executive PDF report",
+        "features": [
+          "16-phase diagnostic with BLACKBOX Wolf",
+          "Health score by category",
+          "Prioritized findings with suggested scripts",
+          "Offline mode: no access to your network",
+          "Results review session"
+        ],
+        "cta": "Request a Health Check",
+        "style": "featured"
+      },
+      {
+        "name": "DBA support",
+        "price": "Quote",
+        "priceNote": "Monthly",
+        "delivery": "Periodic diagnostics",
+        "features": [
+          "Periodic diagnostic compared with the previous one",
+          "Tracking of improvements and regressions",
+          "Monthly executive report",
+          "DBA support for the action plan"
+        ],
+        "cta": "Quote DBA support",
+        "style": ""
+      },
+      {
+        "name": "BLACKBOX Wolf demo",
+        "price": "Free",
+        "priceNote": "Online",
+        "delivery": "Guided demo",
+        "features": [
+          "Walkthrough of diagnostics and reports",
+          "Example with lab data",
+          "Answers to technical questions"
+        ],
+        "cta": "Book a demo",
+        "style": ""
+      }
+    ],
+    "sqlNote": "Multi-instance discount: TBD."
   },
   "packages": {
     "eyebrow": "Services & packages",
