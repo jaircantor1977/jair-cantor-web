@@ -1,0 +1,32 @@
+---
+const { t } = Astro.props;
+const { process, trust } = t;
+const number = (index) => String(index + 1).padStart(2, "0");
+---
+<section class="section process-section" id="proceso">
+  <div class="section-intro compact">
+    <p class="eyebrow">{process.eyebrow}</p>
+    <h2>{process.title}</h2>
+    <p>{process.description}</p>
+  </div>
+  <div class="timeline">
+    {process.steps.map((step, index) => (
+      <article>
+        <span>{number(index)}</span>
+        <h3>{step.title}</h3>
+        <p>{step.description}</p>
+      </article>
+    ))}
+  </div>
+</section>
+
+<section class="section trust-section">
+  <div class="trust-grid">
+    {trust.map((item) => (
+      <article>
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

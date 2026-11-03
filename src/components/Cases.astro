@@ -1,0 +1,36 @@
+---
+const { t } = Astro.props;
+const { cases } = t;
+const { feature, card } = cases;
+---
+<section class="section dark" id="casos">
+  <div class="section-intro compact">
+    <p class="eyebrow">{cases.eyebrow}</p>
+    <h2>{cases.title}</h2>
+  </div>
+  <div class="case-grid">
+    <article class="case-feature">
+      <div class="case-content">
+        <p class="case-kicker">{feature.kicker}</p>
+        <h3>{feature.title}</h3>
+        <p>{feature.description}</p>
+        <div class="impact-row">
+          <strong>{feature.before}</strong>
+          <span>-&gt;</span>
+          <strong>{feature.after}</strong>
+          <b>{feature.impact}</b>
+        </div>
+      </div>
+      <img src={feature.image} width="1240" height="1754" loading="lazy" decoding="async" alt={feature.alt}>
+    </article>
+
+    <article class="case-card">
+      <img src={card.image} width="1240" height="1754" loading="lazy" decoding="async" alt={card.alt}>
+      <div>
+        <p class="case-kicker">{card.kicker}</p>
+        <h3>{card.title}</h3>
+        <p>{card.description}</p>
+      </div>
+    </article>
+  </div>
+</section>

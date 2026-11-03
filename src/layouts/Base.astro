@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+
+const { t } = Astro.props;
+const site = "https://jaircantorconsulting.org";
+const url = t.meta.path === "/" ? site : `${site}${t.meta.path}`;
+const fonts = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:wght@700;800&display=swap";
+---
+<!doctype html>
+<html lang={t.lang}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#102b57">
+    <meta name="color-scheme" content="light">
+
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description}>
+    <meta name="keywords" content={t.meta.keywords}>
+    <meta name="author" content="Jair Cantor">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="es" href={`${site}/`}>
+    <link rel="alternate" hreflang="en" href={`${site}/en`}>
+    <link rel="alternate" hreflang="x-default" href={`${site}/`}>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={t.meta.title}>
+    <meta property="og:description" content={t.meta.ogDescription}>
+    <meta property="og:url" content={url}>
+    <meta property="og:site_name" content="Jair Cantor Consulting">
+    <meta property="og:image" content={`${site}/og-image.png`}>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content={t.meta.locale}>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={t.meta.title}>
+    <meta name="twitter:description" content={t.meta.twitterDescription}>
+    <meta name="twitter:image" content={`${site}/og-image.png`}>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    <link rel="manifest" href="/manifest.json?v=4">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href={fonts}>
+    <link rel="stylesheet" href={fonts} media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href={fonts}></noscript>
+  </head>
+  <body>
+    <slot />
+
+    <script>
+      import "../scripts/header.js";
+      import "../scripts/navigation.js";
+      import "../scripts/animations.js";
+      import "../scripts/extras.js";
+      import "../scripts/dashboard-demo.js";
+    </script>
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>

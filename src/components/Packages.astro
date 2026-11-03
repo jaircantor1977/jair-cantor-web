@@ -1,0 +1,54 @@
+---
+const { t } = Astro.props;
+const { packages, additionalServices: extras } = t;
+const number = (index) => String(index + 1).padStart(2, "0");
+---
+<section class="section pricing-section" id="paquetes">
+  <div class="section-intro">
+    <p class="eyebrow">{packages.eyebrow}</p>
+    <h2>{packages.title}</h2>
+    <p>{packages.description}</p>
+  </div>
+  <div class="pricing-grid">
+    {packages.items.map((plan) => (
+      <article class:list={["price-card", plan.style]}>
+        {plan.badge && <div class="badge">{plan.badge}</div>}
+        <p>{plan.name}</p>
+        <h3>{plan.price}</h3>
+        <span>{plan.delivery}</span>
+        <ul>
+          {plan.features.map((feature) => <li>{feature}</li>)}
+        </ul>
+      </article>
+    ))}
+  </div>
+  <div class="extras">
+    <div class="extras-header">
+      <div class="extras-copy">
+        <h3>{extras.title}</h3>
+        <p>{extras.description}</p>
+      </div>
+      <span class="extras-label">{extras.label}</span>
+    </div>
+    <div class="extras-grid">
+      {extras.items.map((item, index) => (
+        <article class="extra-card">
+          <button class="extra-card-toggle" type="button" aria-expanded="false" aria-controls={`extra-details-${index + 1}`}>
+            <span class="extra-card-number">{number(index)}</span>
+            <span class="extra-card-content">
+              <strong>{item.name}</strong>
+              <small>{item.description}</small>
+            </span>
+            <b class="extra-card-price">{item.price}</b>
+            <span class="extra-card-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="extra-card-details" id={`extra-details-${index + 1}`} hidden>
+            <ul>
+              {item.details.map((detail) => <li>{detail}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

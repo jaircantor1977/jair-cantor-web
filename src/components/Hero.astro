@@ -1,0 +1,67 @@
+---
+const { t } = Astro.props;
+const { hero } = t;
+---
+<section class="hero section-band">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{hero.eyebrow}</p>
+      <h1>{hero.title}</h1>
+      <p class="hero-lede">{hero.lede}</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#paquetes">{hero.primaryCta}</a>
+        <a class="button secondary" href="#casos">{hero.secondaryCta}</a>
+      </div>
+      <dl class="hero-stats" aria-label={hero.statsLabel}>
+        {hero.stats.map((stat) => (
+          <div>
+            <dt>{stat.value}</dt>
+            <dd>{stat.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    <div class="hero-visual" aria-label={hero.visualLabel}>
+      <div class="data-flow" aria-hidden="true">
+        <span class="source-node node-sales">{hero.sources.sales}</span>
+        <span class="source-node node-finance">{hero.sources.finance}</span>
+        <span class="source-node node-ops">{hero.sources.ops}</span>
+        <span class="source-node node-marketing">{hero.sources.marketing}</span>
+        {[1, 2, 3, 4].map((n) => <span class={`flow-line line-${n}`}><i></i><i></i></span>)}
+      </div>
+      <div class="floating-card revenue-card">
+        <span>{hero.card.kicker}</span>
+        <strong>{hero.card.title}</strong>
+        <small>{hero.card.detail}</small>
+      </div>
+      <div class="dashboard-shell">
+        <div class="dashboard-top">
+          <span></span><span></span><span></span>
+          <b>Power BI Executive View</b>
+        </div>
+        <div class="metric-row">
+          {hero.metrics.map(([label, value]) => <div><span>{label}</span><strong>{value}</strong></div>)}
+        </div>
+        <div class="chart" aria-hidden="true">
+          {hero.chart.map((h) => <i style={`--h: ${h}%`}></i>)}
+        </div>
+        <div class="pipeline">
+          <span>Python ETL</span>
+          <span>SQL Server</span>
+          <span>DAX</span>
+          <span>Excel</span>
+        </div>
+      </div>
+      <div class="code-panel">
+        <span>daily_report.py</span>
+        <code>extract -&gt; transform -&gt; dashboard</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logos-strip" aria-label={t.stack.label}>
+  {t.stack.items.map((item) => <span>{item}</span>)}
+</section>

@@ -1,0 +1,30 @@
+---
+const { t } = Astro.props;
+const { services } = t;
+const number = (index) => String(index + 1).padStart(2, "0");
+---
+<section class="section light" id="servicios">
+  <div class="section-intro">
+    <p class="eyebrow">{services.eyebrow}</p>
+    <h2>{services.title}</h2>
+    <p>{services.description}</p>
+  </div>
+  <div class="data-groups">
+    {services.groups.map((group, index) => (
+      <article>
+        <span>{number(index)}</span>
+        <h3>{group.title}</h3>
+        <p>{group.description}</p>
+      </article>
+    ))}
+  </div>
+  <div class="service-grid">
+    {services.items.map((service, index) => (
+      <article class="service-card">
+        <span class="service-icon">{number(index)}</span>
+        <h3>{service.title}</h3>
+        <p>{service.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

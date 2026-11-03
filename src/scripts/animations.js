@@ -109,12 +109,9 @@ if (document.readyState === "loading") {
   initAnimations();
 }
 
-document.addEventListener("site-content-rendered", initAnimations);
-
 // Exportar funcionalidad
 export const cleanup = () => {
   observer.disconnect();
-  document.removeEventListener("site-content-rendered", initAnimations);
 };
 
 export const observeElement = (element) => {

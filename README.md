@@ -2,32 +2,36 @@
 
 Sitio web de [jaircantorconsulting.org](https://jaircantorconsulting.org): landing page de consultoría en BI y análisis financiero, en español (`/`) e inglés (`/en`).
 
-HTML, CSS y JavaScript puro, sin dependencias ni paso de build. Se publica en Vercel automáticamente con cada push a `main`.
+Hecho con [Astro](https://astro.build): se genera HTML estático en `dist/` y Vercel lo publica automáticamente con cada push a `main`.
 
 ## Estructura
 
-| Archivo | Qué contiene |
+| Ruta | Qué contiene |
 |---|---|
-| `index.html` / `en.html` | Página en español / inglés |
-| `styles.css` | Todos los estilos |
-| `config/site.es.json` / `config/site.en.json` | Servicios, paquetes, complementos y contacto |
-| `modules/config-content.js` | Carga el JSON del idioma y reemplaza esas secciones del HTML |
-| `modules/dashboard-demo.js` | Datos y lógica del demo de dashboards (ES/EN) |
-| `modules/header.js`, `navigation.js`, `animations.js` | Header al hacer scroll, scroll suave y animaciones de entrada |
-| `assets/` | Imágenes de los casos (WebP) |
-| `vercel.json` | URLs limpias y cabeceras de seguridad |
-| `sitemap.xml`, `robots.txt`, `manifest.json` | SEO y PWA |
+| `src/content/es.json` / `en.json` | **Todo el texto del sitio**, un archivo por idioma |
+| `src/components/` | Una plantilla por sección (Hero, Dashboards, Services, Cases, Packages, Process, Contact…) |
+| `src/components/HomePage.astro` | Orden de las secciones |
+| `src/layouts/Base.astro` | `<head>`: SEO, Open Graph, favicons, fuentes y scripts |
+| `src/pages/index.astro` / `en.astro` | Las dos páginas: cada una carga su archivo de contenido |
+| `src/styles/global.css` | Todos los estilos |
+| `src/scripts/` | Header al hacer scroll, scroll suave, animaciones, complementos desplegables y demo de dashboards |
+| `public/` | Archivos que se copian tal cual: imágenes, favicons, `manifest.json`, `robots.txt`, `sitemap.xml` |
+| `vercel.json` | Build de Astro, URLs limpias y cabeceras de seguridad |
 
 ## Editar contenido
 
-- **Precios, servicios, complementos y contacto:** edita `config/site.es.json` y `config/site.en.json`. Actualiza también el mismo bloque en `index.html` / `en.html`, que se muestra si el JSON no carga.
-- **Resto de secciones** (portada, casos, proceso, confianza): edita directamente `index.html` y `en.html`.
-- **Demo de dashboards:** edita `modules/dashboard-demo.js`.
+Cambia el texto, precios, servicios, casos o datos del demo en `src/content/es.json` y en `src/content/en.json`. Ambas páginas usan las mismas plantillas, así que no hay que tocar HTML para cambiar contenido.
+
+Para agregar o reordenar secciones, edita `src/components/HomePage.astro`.
 
 ## Correr en local
 
 ```bash
-node dev-server.cjs
+npm install
 ```
 
-Abre http://127.0.0.1:8143/ (español) o http://127.0.0.1:8143/en.html (inglés). El script de Vercel Insights da 404 en local; es normal.
+```bash
+npm run dev
+```
+
+Abre http://localhost:4321/ (español) o http://localhost:4321/en (inglés). Para probar la versión compilada: `npm run build` y luego `npm run preview`. El script de Vercel Insights da 404 en local; es normal.

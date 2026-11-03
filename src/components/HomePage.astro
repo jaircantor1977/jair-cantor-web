@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "./Header.astro";
+import Hero from "./Hero.astro";
+import Dashboards from "./Dashboards.astro";
+import Services from "./Services.astro";
+import Cases from "./Cases.astro";
+import Packages from "./Packages.astro";
+import Process from "./Process.astro";
+import Contact from "./Contact.astro";
+import Footer from "./Footer.astro";
+
+const { t } = Astro.props;
+---
+<Base t={t}>
+  <Header t={t} />
+  <main id="inicio">
+    <Hero t={t} />
+    <Dashboards t={t} />
+    <Services t={t} />
+    <Cases t={t} />
+    <Packages t={t} />
+    <Process t={t} />
+    <Contact t={t} />
+  </main>
+  <Footer t={t} />
+</Base>

@@ -1,0 +1,513 @@
+{
+  "lang": "es",
+  "meta": {
+    "title": "Jair Cantor | Consultor BI & Análisis Financiero",
+    "description": "Consultoría en Power BI, Python, SQL, Excel, modelos financieros, análisis P&L, automatización de reportes y dashboards ejecutivos. 6+ años de experiencia.",
+    "keywords": "Power BI, Python, SQL, Excel, análisis financiero, dashboards, ETL, consultoría BI",
+    "ogDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones Python + SQL para equipos que necesitan claridad ejecutiva.",
+    "twitterDescription": "Construyo dashboards Power BI, modelos P&L y automatizaciones con Python + SQL.",
+    "path": "/",
+    "locale": "es_CO"
+  },
+  "header": {
+    "homeLabel": "Inicio",
+    "navLabel": "Navegación principal",
+    "nav": [
+      {
+        "href": "#servicios",
+        "label": "Servicios"
+      },
+      {
+        "href": "#dashboards",
+        "label": "Dashboards"
+      },
+      {
+        "href": "#casos",
+        "label": "Casos"
+      },
+      {
+        "href": "#paquetes",
+        "label": "Paquetes"
+      },
+      {
+        "href": "#proceso",
+        "label": "Proceso"
+      }
+    ],
+    "languageSwitch": {
+      "href": "/en",
+      "lang": "en",
+      "label": "EN",
+      "ariaLabel": "Open English version"
+    },
+    "cta": "Empezar"
+  },
+  "hero": {
+    "eyebrow": "Consultor BI & Análisis Financiero",
+    "title": "Datos financieros listos para decidir, no solo para reportar.",
+    "lede": "Construyo dashboards Power BI, modelos P&L, proyecciones, pitch decks y automatizaciones con Python + SQL para equipos que necesitan claridad ejecutiva en días, no en semanas.",
+    "primaryCta": "Ver paquetes",
+    "secondaryCta": "Ver resultados",
+    "statsLabel": "Indicadores de experiencia",
+    "stats": [
+      {
+        "value": "6+",
+        "label": "años de experiencia"
+      },
+      {
+        "value": "30+",
+        "label": "proyectos entregados"
+      },
+      {
+        "value": "93%",
+        "label": "reducción de tiempo lograda"
+      }
+    ],
+    "visualLabel": "Flujo de datos hacia un tablero ejecutivo",
+    "sources": {
+      "sales": "Ventas",
+      "finance": "Finanzas",
+      "ops": "Operaciones",
+      "marketing": "Marketing"
+    },
+    "card": {
+      "kicker": "Visibilidad ejecutiva",
+      "title": "Un dashboard, toda la empresa",
+      "detail": "EBITDA, márgenes y ventas en un solo clic"
+    },
+    "metrics": [
+      [
+        "Ingresos",
+        "$20.8M"
+      ],
+      [
+        "EBITDA",
+        "$4.2M"
+      ],
+      [
+        "Margen neto",
+        "14%"
+      ]
+    ],
+    "chart": [
+      54,
+      42,
+      64,
+      74,
+      88,
+      92,
+      77,
+      68
+    ]
+  },
+  "stack": {
+    "label": "Stack tecnológico",
+    "items": [
+      "Power BI",
+      "Python",
+      "SQL",
+      "Excel Avanzado",
+      "DAX",
+      "Pandas",
+      "PowerPoint"
+    ]
+  },
+  "dashboards": {
+    "eyebrow": "Dashboards interactivos",
+    "title": "Visuales que responden a preguntas de negocio.",
+    "description": "La entrega puede incluir filtros por periodo, canal, región, categoría o responsable, con métricas que cambian al instante para explorar escenarios sin pedir nuevos reportes.",
+    "controlsLabel": "Seleccionar tipo de dashboard",
+    "periodLabel": "Periodo",
+    "chartLabel": "Gráfico de barras interactivo",
+    "tabs": [
+      {
+        "key": "finance",
+        "label": "Finanzas"
+      },
+      {
+        "key": "sales",
+        "label": "Ventas & CRM"
+      },
+      {
+        "key": "marketing",
+        "label": "Marketing"
+      },
+      {
+        "key": "ops",
+        "label": "Operaciones"
+      }
+    ],
+    "data": {
+      "finance": {
+        "kicker": "Rentabilidad y flujo",
+        "title": "Dashboard financiero ejecutivo",
+        "labels": [
+          "Ene",
+          "Feb",
+          "Mar",
+          "Abr",
+          "May",
+          "Jun"
+        ],
+        "bars": [
+          58,
+          46,
+          64,
+          72,
+          88,
+          93
+        ],
+        "kpis": [
+          [
+            "Ingresos",
+            "$20.8M"
+          ],
+          [
+            "EBITDA",
+            "$4.2M"
+          ],
+          [
+            "Margen neto",
+            "14%"
+          ]
+        ],
+        "donut": 68,
+        "donutLabel": "Avance del objetivo",
+        "insight": "Automatización diaria del reporte financiero con variaciones por producto y periodo."
+      },
+      "sales": {
+        "kicker": "Ventas & CRM",
+        "title": "Pipeline comercial y conversión",
+        "labels": [
+          "Leads",
+          "MQL",
+          "SQL",
+          "Demo",
+          "Oferta",
+          "Cierre"
+        ],
+        "bars": [
+          92,
+          78,
+          61,
+          48,
+          36,
+          28
+        ],
+        "kpis": [
+          [
+            "Pipeline",
+            "$1.4M"
+          ],
+          [
+            "Conversión",
+            "31%"
+          ],
+          [
+            "Ticket prom.",
+            "$8.7K"
+          ]
+        ],
+        "donut": 74,
+        "donutLabel": "Meta de ventas",
+        "insight": "Seguimiento del embudo por vendedor, fuente, etapa y probabilidad de cierre."
+      },
+      "marketing": {
+        "kicker": "Marketing & crecimiento",
+        "title": "ROI de campañas y adquisición",
+        "labels": [
+          "SEO",
+          "Ads",
+          "Email",
+          "Social",
+          "Events",
+          "Ref."
+        ],
+        "bars": [
+          64,
+          83,
+          58,
+          49,
+          34,
+          72
+        ],
+        "kpis": [
+          [
+            "Leads",
+            "4.8K"
+          ],
+          [
+            "CAC",
+            "$18"
+          ],
+          [
+            "ROI",
+            "3.6x"
+          ]
+        ],
+        "donut": 81,
+        "donutLabel": "ROAS objetivo",
+        "insight": "Comparación de canales por costo, conversión, calidad de lead y retorno de inversión."
+      },
+      "ops": {
+        "kicker": "Operaciones & logística",
+        "title": "Cumplimiento operativo en tiempo real",
+        "labels": [
+          "Picking",
+          "Packing",
+          "Desp.",
+          "Ent.",
+          "Inc.",
+          "SLA"
+        ],
+        "bars": [
+          76,
+          82,
+          69,
+          88,
+          32,
+          91
+        ],
+        "kpis": [
+          [
+            "Órdenes",
+            "12.4K"
+          ],
+          [
+            "SLA",
+            "91%"
+          ],
+          [
+            "Incidencias",
+            "-18%"
+          ]
+        ],
+        "donut": 91,
+        "donutLabel": "Cumplimiento SLA",
+        "insight": "Monitoreo de inventario, entregas, cuellos de botella, productividad y alertas operativas."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Soluciones financieras modulares para cada etapa del negocio.",
+    "description": "Puedes empezar con un dashboard puntual o construir un sistema BI completo con automatización, modelo financiero y presentación ejecutiva.",
+    "groups": [
+      {
+        "title": "Ventas & CRM",
+        "description": "Embudo comercial, conversión, ticket promedio, forecast, oportunidades por vendedor y seguimiento de clientes."
+      },
+      {
+        "title": "Marketing & crecimiento",
+        "description": "ROI por campaña, CAC, leads, tasa de conversión, canales, cohortes y atribución para optimizar inversión."
+      },
+      {
+        "title": "Operaciones & logística",
+        "description": "Inventario, cumplimiento, tiempos de entrega, productividad, incidencias, capacidad y alertas operativas."
+      }
+    ],
+    "items": [
+      {
+        "title": "Dashboards Power BI",
+        "description": "KPI ejecutivos, drill-down por producto, sucursal o periodo, visuales claros y actualización automática."
+      },
+      {
+        "title": "Análisis P&L y rentabilidad",
+        "description": "Lectura de ingresos, COGS, OPEX, EBITDA, margen bruto y utilidad neta con recomendaciones accionables."
+      },
+      {
+        "title": "Modelos financieros",
+        "description": "Proyecciones a 3 años, escenarios pesimista/base/optimista, flujo de caja y estructura para inversionistas."
+      },
+      {
+        "title": "Automatización Python + SQL",
+        "description": "Scripts y pipelines ETL que consolidan datos desde ERP, bases de datos o archivos Excel/CSV."
+      },
+      {
+        "title": "Pitch decks ejecutivos",
+        "description": "Presentaciones para rondas de inversión, comités directivos o comunicación financiera con narrativa clara."
+      },
+      {
+        "title": "Reportes automáticos",
+        "description": "Generación de PDFs, presentaciones o archivos editables con un clic o en horario programado."
+      }
+    ]
+  },
+  "cases": {
+    "eyebrow": "Casos de éxito",
+    "title": "Resultados demostrables en banca, finanzas y retail.",
+    "feature": {
+      "kicker": "FQ4TECH · Banco República Dominicana",
+      "title": "Automatización del proceso de rentabilidad bancaria",
+      "description": "Se pasó de un ciclo manual de 15 días hábiles a un proceso automatizado de 1 día con Python, SQL, Power BI y Excel.",
+      "before": "15 días",
+      "after": "1 día",
+      "impact": "93% menos tiempo",
+      "image": "/assets/case-bank-automation.webp",
+      "alt": "Caso de automatización bancaria con reducción de 15 días a 1 día"
+    },
+    "card": {
+      "kicker": "Nova Retail S.A.S.",
+      "title": "Dashboard P&L ejecutivo",
+      "description": "Análisis de 12 meses con ingresos, utilidad bruta, EBITDA, utilidad neta y margen por categoría.",
+      "image": "/assets/case-retail-dashboard.webp",
+      "alt": "Dashboard P&L ejecutivo para retail"
+    }
+  },
+  "packages": {
+    "eyebrow": "Servicios & paquetes",
+    "title": "Tres paquetes para convertir datos en decisiones.",
+    "description": "Todos incluyen alcance claro, revisiones y entrega en el plazo acordado.",
+    "items": [
+      {
+        "name": "Básico",
+        "price": "$200 USD",
+        "delivery": "Entrega: 3 días",
+        "style": "",
+        "badge": "",
+        "features": [
+          "Dashboard Power BI hasta 6 KPIs",
+          "1 fuente de datos Excel/CSV",
+          "Diseño ejecutivo profesional",
+          "1 revisión incluida"
+        ]
+      },
+      {
+        "name": "Profesional",
+        "price": "$450 USD",
+        "delivery": "Entrega: 5 días",
+        "style": "featured",
+        "badge": "Más popular",
+        "features": [
+          "Dashboard completo con KPIs ilimitados",
+          "Hasta 3 fuentes de datos",
+          "Análisis P&L o rentabilidad",
+          "Presentación ejecutiva 10 slides",
+          "2 revisiones + sesión de entrega",
+          "Archivo editable entregado"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$950 USD",
+        "delivery": "Entrega: 10 días",
+        "style": "premium",
+        "badge": "",
+        "features": [
+          "Sistema BI financiero completo",
+          "Python + SQL automatización",
+          "Modelo financiero + proyecciones",
+          "Pitch deck inversionistas 15 slides",
+          "Revisiones ilimitadas",
+          "Soporte 30 días post-entrega"
+        ]
+      }
+    ]
+  },
+  "additionalServices": {
+    "title": "Servicios adicionales",
+    "description": "Agrega entregables puntuales a cualquier paquete cuando el proyecto necesita más profundidad, automatización o material ejecutivo.",
+    "label": "Complementos opcionales",
+    "items": [
+      {
+        "name": "Pitch Deck para Inversores",
+        "price": "$150 - $300",
+        "description": "Una narrativa clara para inversionistas con cifras, contexto de mercado y slides listos para decidir.",
+        "details": [
+          "Estructura narrativa para inversionistas",
+          "Slides financieros y de tracción",
+          "Archivo editable de presentación"
+        ]
+      },
+      {
+        "name": "Modelo de Proyecciones 3 años",
+        "price": "$200 - $400",
+        "description": "Proyecciones por escenarios para planear ingresos, costos, márgenes y flujo de caja.",
+        "details": [
+          "Escenarios base, optimista y conservador",
+          "Supuestos de ingresos y gastos",
+          "Modelo editable con inputs claros"
+        ]
+      },
+      {
+        "name": "Automatización de Reportes",
+        "price": "$300 - $600",
+        "description": "Generación automática de reportes desde fuentes recurrentes y archivos operativos.",
+        "details": [
+          "Flujo en Python o SQL",
+          "Salida en Excel, PDF o dashboard",
+          "Documentación del proceso repetible"
+        ]
+      },
+      {
+        "name": "Análisis de Rentabilidad",
+        "price": "$150 - $350",
+        "description": "Revisión de márgenes y rentabilidad por producto, canal, sucursal o grupo de clientes.",
+        "details": [
+          "Desglose de ingresos, costos y margen",
+          "Drivers de rentabilidad y atípicos",
+          "Recomendaciones ejecutivas"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Proceso de trabajo",
+    "title": "Así trabajamos juntos.",
+    "description": "Un proceso claro, transparente y orientado a resultados.",
+    "steps": [
+      {
+        "title": "Brief & alcance",
+        "description": "Me envías tus datos y el objetivo. Defino alcance, herramientas y plazo. Respondo en menos de 24 horas con una propuesta detallada."
+      },
+      {
+        "title": "Análisis & construcción",
+        "description": "Proceso tus datos, construyo el modelo y el dashboard. Envío un avance al 50% para validar el enfoque."
+      },
+      {
+        "title": "Entrega & revisión",
+        "description": "Entrego el archivo completo antes del plazo. Incluyo rondas de ajustes para asegurar que el resultado cumpla el brief."
+      },
+      {
+        "title": "Soporte post-entrega",
+        "description": "Respondo dudas sobre el uso de los entregables. El paquete Premium incluye 30 días de soporte para ajustes menores."
+      }
+    ]
+  },
+  "trust": [
+    {
+      "title": "Experiencia real en banca y finanzas",
+      "description": "He automatizado procesos reales en bancos, reduciendo tiempos de días a horas."
+    },
+    {
+      "title": "Stack técnico completo",
+      "description": "Power BI + Python + SQL + Excel: desde extracción y modelado hasta presentación ejecutiva."
+    },
+    {
+      "title": "Entrega puntual garantizada",
+      "description": "Trabajo con plazos realistas, comunicación anticipada y entregables editables."
+    },
+    {
+      "title": "Comunicación clara",
+      "description": "Explico cada decisión en lenguaje de negocio, sin tecnicismos innecesarios."
+    }
+  ],
+  "contact": {
+    "eyebrow": "Canales de contacto · Colombia",
+    "title": "¿Listo para empezar?",
+    "description": "Conversemos por el canal que prefieras. Respondo con contexto, alcance y una ruta clara para convertir tus datos en decisiones.",
+    "linksLabel": "Canales de contacto",
+    "email": "jair.cantor.arciniegas@gmail.com",
+    "emailLabel": "Correo directo",
+    "linkedinUrl": "https://www.linkedin.com/in/jair-cantor-arciniegas/",
+    "linkedinLabel": "LinkedIn",
+    "linkedinDescription": "Conectar y revisar perfil profesional"
+  },
+  "footer": {
+    "tagline": "Jair Cantor. Consultor BI & Análisis Financiero.",
+    "contactLabel": "Contacto:",
+    "location": "Colombia",
+    "backToTop": "↑ Volver arriba",
+    "backToTopLabel": "Volver al inicio"
+  }
+}

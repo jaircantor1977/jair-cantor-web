@@ -1,0 +1,17 @@
+---
+const { t } = Astro.props;
+const { header } = t;
+---
+<header class="site-header" data-header>
+  <a class="brand" href="#inicio" aria-label={header.homeLabel}>
+    <span class="brand-mark">JC</span>
+    <span>Jair Cantor</span>
+  </a>
+  <nav class="nav-links" aria-label={header.navLabel}>
+    {header.nav.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+  <div class="header-actions">
+    <a class="language-toggle" href={header.languageSwitch.href} hreflang={header.languageSwitch.lang} aria-label={header.languageSwitch.ariaLabel}>{header.languageSwitch.label}</a>
+    <a class="header-cta" href="#contacto">{header.cta}</a>
+  </div>
+</header>

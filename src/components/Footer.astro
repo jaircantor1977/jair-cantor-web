@@ -1,0 +1,12 @@
+---
+const { t } = Astro.props;
+const { footer, contact } = t;
+const year = new Date().getFullYear();
+---
+<footer role="contentinfo">
+  <div class="footer-content">
+    <p>&copy; {year} {footer.tagline}</p>
+    <p>{footer.contactLabel} <a href={`mailto:${contact.email}`}>{contact.email}</a> - {footer.location}</p>
+  </div>
+  <a href="#inicio" class="footer-link" aria-label={footer.backToTopLabel}>{footer.backToTop}</a>
+</footer>
