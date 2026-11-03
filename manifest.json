@@ -61,7 +61,7 @@
     {
       "name": "Contactar",
       "short_name": "Contacto",
-      "description": "Contactar por Workana",
+      "description": "Contactar por correo o LinkedIn",
       "url": "/?utm_source=pwa#contacto",
       "icons": [
         {

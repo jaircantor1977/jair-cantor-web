@@ -1837,11 +1837,6 @@ h3 {
   animation-delay: 90ms;
 }
 
-.contact-link:nth-child(3) {
-  --card-accent: #ffd166;
-  animation-delay: 180ms;
-}
-
 .contact-link::after {
   content: "";
   position: absolute;

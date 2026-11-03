@@ -184,21 +184,9 @@ const renderContact = (contact) => {
     linkedin.href = contact.linkedinUrl;
   }
 
-  const workana = document.querySelector(".contact-workana");
-  if (workana && contact.url) {
-    const title = workana.querySelector("strong");
-    const detail = workana.querySelector("small");
-    if (title) title.textContent = contact.workanaLabel || contact.buttonLabel || "Workana";
-    if (detail) detail.textContent = contact.workanaDescription || "Start a project from the platform";
-    workana.href = contact.url;
-  }
-
-  const footerWorkana = document.querySelector("footer .footer-content p:nth-child(2)");
-  if (footerWorkana) {
-    const emailLink = contact.email
-      ? ` - <a href="mailto:${contact.email}">${contact.email}</a>`
-      : "";
-    footerWorkana.innerHTML = `${contact.footerAvailability} <a href="${contact.url}" target="_blank" rel="noopener noreferrer">Workana</a>${emailLink} - ${contact.footerLocation}`;
+  const footerContact = document.querySelector("footer .footer-content p:nth-child(2)");
+  if (footerContact && contact.email) {
+    footerContact.innerHTML = `${contact.footerAvailability} <a href="mailto:${contact.email}">${contact.email}</a> - ${contact.footerLocation}`;
   }
 };
 

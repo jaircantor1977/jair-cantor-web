@@ -131,17 +131,13 @@
     "availability": "Contact channels &middot; Colombia",
     "title": "Ready to start?",
     "description": "Let's talk through the channel you prefer. I will reply with context, scope, and a clear path to turn your data into decisions.",
-    "buttonLabel": "Contact on Workana",
-    "url": "https://www.workana.com/",
     "emailLabel": "Direct email",
     "email": "jair.cantor.arciniegas@gmail.com",
     "emailDescription": "Send me the data challenge or need",
     "linkedinLabel": "LinkedIn",
     "linkedinUrl": "https://www.linkedin.com/search/results/people/?keywords=Jair%20Ernesto%20Cantor%20Arciniegas",
     "linkedinDescription": "Connect and review my professional profile",
-    "workanaLabel": "Workana",
-    "workanaDescription": "Start a project from the platform",
-    "footerAvailability": "Contact via",
+    "footerAvailability": "Contact:",
     "footerLocation": "Colombia"
   }
 }
