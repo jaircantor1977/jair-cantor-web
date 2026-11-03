@@ -690,3 +690,12 @@
     height: 52px;
   }
 }
+
+.contact-agenda {
+  --card-accent: #78d6ff;
+}
+
+/* Keep footer links clear of the floating WhatsApp button. */
+footer[role="contentinfo"] {
+  padding-right: 96px;
+}

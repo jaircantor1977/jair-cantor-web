@@ -51,8 +51,8 @@
     "eyebrow": "BI, Data & AI Consultant",
     "title": "Data, AI, and databases that work for your business.",
     "lede": "Power BI dashboards and financial analysis, AI agents you can audit, and SQL Server diagnostics: executive clarity in days, not weeks.",
-    "primaryCta": "View pricing",
-    "secondaryCta": "View results",
+    "primaryCta": "Book a call",
+    "secondaryCta": "View pricing",
     "statsLabel": "Experience indicators",
     "stats": [
       {
@@ -633,7 +633,8 @@
           "Executive report with a recommendation"
         ],
         "cta": "Request an assessment",
-        "style": ""
+        "style": "",
+        "booking": "ai"
       },
       {
         "name": "Proof of concept / MVP",
@@ -647,7 +648,8 @@
           "Demo with your team and a production plan"
         ],
         "cta": "Quote an MVP",
-        "style": "featured"
+        "style": "featured",
+        "booking": "call"
       },
       {
         "name": "Implementation and support",
@@ -661,7 +663,8 @@
           "Training for your team"
         ],
         "cta": "Get a quote",
-        "style": "premium"
+        "style": "premium",
+        "booking": "call"
       }
     ],
     "sql": [
@@ -678,7 +681,8 @@
           "Results review session"
         ],
         "cta": "Request a Health Check",
-        "style": "featured"
+        "style": "featured",
+        "booking": "healthCheck"
       },
       {
         "name": "DBA support",
@@ -692,7 +696,8 @@
           "DBA support for the action plan"
         ],
         "cta": "Quote DBA support",
-        "style": ""
+        "style": "",
+        "booking": "call"
       },
       {
         "name": "BLACKBOX Wolf demo",
@@ -705,7 +710,8 @@
           "Answers to technical questions"
         ],
         "cta": "Book a demo",
-        "style": ""
+        "style": "",
+        "booking": "wolf"
       }
     ],
     "sqlNote": "Volume discount: ask us."
@@ -862,13 +868,21 @@
     "whatsappLabel": "WhatsApp",
     "whatsappDescription": "Message me and I reply the same day",
     "whatsappMessage": "Hi Jair, I saw your website and I'd like to talk about a project.",
-    "whatsappFloatLabel": "Message on WhatsApp"
+    "whatsappFloatLabel": "Message on WhatsApp",
+    "agendaLabel": "Book a call",
+    "agendaDescription": "Pick a day and time: 20-minute video call"
   },
   "footer": {
-    "tagline": "Jair Cantor. BI Consultant & Financial Analysis.",
+    "tagline": "Jair Cantor. BI, AI & SQL Server Consulting.",
     "contactLabel": "Contact:",
     "location": "Colombia",
     "backToTop": "↑ Back to top",
     "backToTopLabel": "Back to top"
+  },
+  "booking": {
+    "call": "https://cal.com/jaircantor/llamada",
+    "ai": "https://cal.com/jaircantor/diagnostico-ia",
+    "wolf": "https://cal.com/jaircantor/demo-wolf",
+    "healthCheck": "https://cal.com/jaircantor/health-check"
   }
 }

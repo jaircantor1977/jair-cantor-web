@@ -51,8 +51,8 @@
     "eyebrow": "Consultor BI, Datos & IA",
     "title": "Datos, IA y bases de datos que trabajan para tu negocio.",
     "lede": "Dashboards Power BI y análisis financiero, agentes de IA que se pueden auditar y diagnóstico de SQL Server: claridad ejecutiva en días, no en semanas.",
-    "primaryCta": "Ver precios",
-    "secondaryCta": "Ver resultados",
+    "primaryCta": "Agendar llamada",
+    "secondaryCta": "Ver precios",
     "statsLabel": "Indicadores de experiencia",
     "stats": [
       {
@@ -633,7 +633,8 @@
           "Informe ejecutivo con recomendación"
         ],
         "cta": "Solicitar diagnóstico",
-        "style": ""
+        "style": "",
+        "booking": "ai"
       },
       {
         "name": "Prueba de concepto / MVP",
@@ -647,7 +648,8 @@
           "Demo con tu equipo y plan de producción"
         ],
         "cta": "Cotizar MVP",
-        "style": "featured"
+        "style": "featured",
+        "booking": "call"
       },
       {
         "name": "Implementación y soporte",
@@ -661,7 +663,8 @@
           "Capacitación de tu equipo"
         ],
         "cta": "Cotizar proyecto",
-        "style": "premium"
+        "style": "premium",
+        "booking": "call"
       }
     ],
     "sql": [
@@ -678,7 +681,8 @@
           "Sesión de revisión de resultados"
         ],
         "cta": "Solicitar Health Check",
-        "style": "featured"
+        "style": "featured",
+        "booking": "healthCheck"
       },
       {
         "name": "Acompañamiento DBA",
@@ -692,7 +696,8 @@
           "Soporte DBA para el plan de acción"
         ],
         "cta": "Cotizar acompañamiento",
-        "style": ""
+        "style": "",
+        "booking": "call"
       },
       {
         "name": "Demo de BLACKBOX Wolf",
@@ -705,7 +710,8 @@
           "Resolución de dudas técnicas"
         ],
         "cta": "Agendar demo",
-        "style": ""
+        "style": "",
+        "booking": "wolf"
       }
     ],
     "sqlNote": "Descuento por volumen: consultar."
@@ -862,13 +868,21 @@
     "whatsappLabel": "WhatsApp",
     "whatsappDescription": "Escríbeme y respondo el mismo día",
     "whatsappMessage": "Hola Jair, vi tu sitio web y quiero conversar sobre un proyecto.",
-    "whatsappFloatLabel": "Escribir por WhatsApp"
+    "whatsappFloatLabel": "Escribir por WhatsApp",
+    "agendaLabel": "Agendar una llamada",
+    "agendaDescription": "Elige día y hora: 20 minutos por videollamada"
   },
   "footer": {
-    "tagline": "Jair Cantor. Consultor BI & Análisis Financiero.",
+    "tagline": "Jair Cantor. Consultoría en BI, IA y SQL Server.",
     "contactLabel": "Contacto:",
     "location": "Colombia",
     "backToTop": "↑ Volver arriba",
     "backToTopLabel": "Volver al inicio"
+  },
+  "booking": {
+    "call": "https://cal.com/jaircantor/llamada",
+    "ai": "https://cal.com/jaircantor/diagnostico-ia",
+    "wolf": "https://cal.com/jaircantor/demo-wolf",
+    "healthCheck": "https://cal.com/jaircantor/health-check"
   }
 }

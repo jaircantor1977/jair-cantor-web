@@ -32,7 +32,7 @@ const number = (index) => String(index + 1).padStart(2, "0");
       ))}
     </div>
     <div class="ai-cta">
-      <a class="button primary" href="#contacto">{ai.cta}</a>
+      <a class="button primary" href={t.booking.ai} target="_blank" rel="noopener" data-track="book_ai">{ai.cta}</a>
       <a class="button secondary" href="#precios-ia">{ai.pricingLink}</a>
       <span>{ai.ctaNote}</span>
     </div>

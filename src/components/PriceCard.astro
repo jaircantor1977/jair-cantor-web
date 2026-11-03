@@ -1,5 +1,6 @@
 ---
-const { plan } = Astro.props;
+const { plan, booking = {} } = Astro.props;
+const bookingUrl = plan.booking && booking[plan.booking];
 // Text prices ("Por definir", "Cotización", "Sin costo") get a smaller type size than "$450 USD".
 const isAmount = /^\$\s?\d/.test(plan.price);
 ---
@@ -12,5 +13,7 @@ const isAmount = /^\$\s?\d/.test(plan.price);
   <ul>
     {plan.features.map((feature) => <li>{feature}</li>)}
   </ul>
-  {plan.cta && <a class="button primary price-cta" href="#contacto" data-track={`pricing_${plan.name}`}>{plan.cta}</a>}
+  {plan.cta && (bookingUrl
+    ? <a class="button primary price-cta" href={bookingUrl} target="_blank" rel="noopener" data-track={`book_${plan.booking}`}>{plan.cta}</a>
+    : <a class="button primary price-cta" href="#contacto" data-track={`pricing_${plan.name}`}>{plan.cta}</a>)}
 </article>

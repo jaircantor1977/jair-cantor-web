@@ -13,8 +13,8 @@ const { hero } = t;
         {hero.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
       </ul>
       <div class="hero-actions">
-        <a class="button primary" href="#paquetes" data-track="hero_pricing">{hero.primaryCta}</a>
-        <a class="button secondary" href="#casos">{hero.secondaryCta}</a>
+        <a class="button primary" href={t.booking.call} target="_blank" rel="noopener" data-track="book_hero">{hero.primaryCta}</a>
+        <a class="button secondary" href="#paquetes" data-track="hero_pricing">{hero.secondaryCta}</a>
       </div>
       <dl class="hero-stats" aria-label={hero.statsLabel}>
         {hero.stats.map((stat) => (

@@ -2,7 +2,7 @@
 import PriceCard from "./PriceCard.astro";
 
 const { t } = Astro.props;
-const { pricing, packages, additionalServices: extras } = t;
+const { pricing, packages, additionalServices: extras, booking } = t;
 const number = (index) => String(index + 1).padStart(2, "0");
 const [biTab, aiTab, sqlTab] = pricing.tabs;
 ---
@@ -66,14 +66,14 @@ const [biTab, aiTab, sqlTab] = pricing.tabs;
   <div class="pricing-panel" id={`precios-${aiTab.key}`} role="tabpanel" aria-labelledby={`tab-precios-${aiTab.key}`} data-pricing-panel={aiTab.key}>
     <p class="pricing-intro">{aiTab.intro}</p>
     <div class="pricing-grid">
-      {pricing.ai.map((plan) => <PriceCard plan={plan} />)}
+      {pricing.ai.map((plan) => <PriceCard plan={plan} booking={booking} />)}
     </div>
   </div>
 
   <div class="pricing-panel" id={`precios-${sqlTab.key}`} role="tabpanel" aria-labelledby={`tab-precios-${sqlTab.key}`} data-pricing-panel={sqlTab.key}>
     <p class="pricing-intro">{sqlTab.intro}</p>
     <div class="pricing-grid">
-      {pricing.sql.map((plan) => <PriceCard plan={plan} />)}
+      {pricing.sql.map((plan) => <PriceCard plan={plan} booking={booking} />)}
     </div>
     <p class="pricing-subnote">{pricing.sqlNote}</p>
   </div>
